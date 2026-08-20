@@ -16,8 +16,8 @@
   --color-error-text: #991b1b;
   --radius: 14px;
   --shadow: 0 4px 20px rgba(87, 18, 25, 0.1);
-  --font-heading: "Poppins", "Inter", sans-serif;
-  --font-body: "Inter", sans-serif;
+  --font-heading: "Poppins", "Noto Sans Devanagari", "Inter", sans-serif;
+  --font-body: "Inter", "Noto Sans Devanagari", sans-serif;
 }
 
 * { box-sizing: border-box; }
@@ -48,12 +48,48 @@ body {
   max-width: 900px;
   margin: 0 auto;
   padding: 14px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  flex-wrap: wrap;
 }
 
 .brand {
   display: flex;
   align-items: center;
   gap: 16px;
+}
+
+.lang-switch {
+  display: flex;
+  gap: 4px;
+  background: var(--color-bg);
+  border: 1px solid var(--color-border);
+  border-radius: 999px;
+  padding: 3px;
+}
+
+.lang-btn {
+  border: none;
+  background: none;
+  color: var(--color-text-muted);
+  font-family: var(--font-body);
+  font-size: 0.8rem;
+  font-weight: 600;
+  padding: 6px 12px;
+  border-radius: 999px;
+  cursor: pointer;
+  transition: background 0.15s ease, color 0.15s ease;
+}
+
+.lang-btn:hover {
+  color: var(--color-text);
+}
+
+.lang-btn.active {
+  background: var(--color-accent);
+  color: #fff;
 }
 
 .brand-logo {
@@ -286,9 +322,14 @@ body {
   background: var(--color-surface);
   border-radius: var(--radius);
   box-shadow: var(--shadow);
-  padding: 28px;
   margin-top: 10px;
   animation: fadeIn 0.25s ease;
+}
+
+/* Padding lives here (not on .result-card) so the "Save as Image" capture,
+   which only screenshots #captureArea, keeps this breathing room too. */
+.capture-area {
+  padding: 36px;
 }
 
 @keyframes fadeIn {
@@ -430,6 +471,42 @@ body {
   font-size: 1rem;
   line-height: 1.5;
   font-weight: 500;
+}
+
+.result-actions {
+  display: flex;
+  justify-content: center;
+  padding: 0 36px 36px;
+}
+
+.save-image-btn {
+  background: var(--color-surface);
+  color: var(--color-primary);
+  border: 2px solid var(--color-primary);
+  border-radius: 12px;
+  padding: 12px 24px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  cursor: pointer;
+  font-family: var(--font-body);
+  transition: background 0.15s ease, color 0.15s ease, transform 0.1s ease;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.save-image-btn:hover:not(:disabled) {
+  background: var(--color-primary);
+  color: #fff;
+}
+
+.save-image-btn:active:not(:disabled) {
+  transform: scale(0.97);
+}
+
+.save-image-btn:disabled {
+  opacity: 0.6;
+  cursor: default;
 }
 
 /* Footer */

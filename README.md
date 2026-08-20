@@ -13,12 +13,39 @@ entirely in the browser and can be hosted anywhere that serves static files.
 | ------------------------- | --------------------------------------------------------------------------------- |
 | `index.html`            | Page structure                                                                    |
 | `style.css`             | Styling (branded with MIT VPU maroon/orange)                                      |
-| `app.js`                | Search logic (by PRN or Name, with live suggestions)                              |
+| `app.js`                | Search logic (by PRN or Name, with live suggestions), language switching, and the "Save as Image" download |
+| `translations.js`       | UI text + schedule/room translations for English, Marathi, Hindi                  |
+| `html2canvas.min.js`    | Vendored copy of [html2canvas](https://html2canvas.hertzen.com/) (MIT), used to render the result card to a downloadable JPG |
 | `data.js`               | **Generated** — student roster + group schedules, loaded by `index.html` |
 | `generate_data.py`      | Rebuilds`data.js` from the Excel roster + the schedule below                    |
 | `Students Details.xlsx` | Source roster (SL No, PRN, Name, Program, Group)                                  |
 | `UniversityLogo.webp`   | University logo used in the header                                                |
 | `netlify.toml`          | Netlify hosting config                                                            |
+
+## Multilingual support
+
+The site has an English / मराठी / हिंदी switcher in the header (persisted in
+the visitor's browser via `localStorage`). Static UI text lives in
+`translations.js`. Student names, PRNs, and program codes are never
+translated — only the surrounding labels, messages, and the schedule/room
+text that `generate_data.py` bakes into `data.js`.
+
+`translations.js` translates schedule/room text by looking up the exact
+English strings that `generate_data.py` generates (activity names like
+`"Campus Tour"`, and room labels like `"Room 219 (2nd Floor)"` via a pattern
+match). **If you add a new activity or change the room-label format in
+`generate_data.py`, add a matching entry in `translations.js`'s
+`ACTIVITY_TRANSLATIONS` / `LOCATION_TRANSLATIONS`** — anything without a
+translation just falls back to showing the English text.
+
+## Saving as an image
+
+Once a student's result is shown, a "Save as Image" button renders the
+result card (group, PRN, program, schedule, welcome message — not the
+button itself) to a JPG the student can download, in whichever language is
+currently selected. This uses the vendored `html2canvas.min.js` rather than
+a CDN, so it keeps working even on flaky venue Wi-Fi once the page itself
+has loaded.
 
 ## Updating the roster
 

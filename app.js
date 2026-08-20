@@ -20,16 +20,65 @@
     scheduleList: document.getElementById("scheduleList"),
     parentScheduleList: document.getElementById("parentScheduleList"),
     welcomeText: document.getElementById("welcomeText"),
+    captureArea: document.getElementById("captureArea"),
+    saveImageBtn: document.getElementById("saveImageBtn"),
   };
+
+  var currentStudent = null;
 
   var byPrn = {};
   STUDENTS.forEach(function (s) {
     byPrn[s.prn.toUpperCase()] = s;
   });
 
-  if (typeof INSTITUTION_NAME === "string") {
-    document.title = INSTITUTION_NAME + " — Orientation";
+  var englishInstitutionName = typeof INSTITUTION_NAME === "string" ? INSTITUTION_NAME : null;
+  var currentLang = I18N.getLang();
+  var langButtons = document.querySelectorAll(".lang-btn");
+
+  function t(key, params) {
+    return I18N.t(currentLang, key, params);
   }
+
+  function applyStaticTranslations() {
+    document.documentElement.lang = currentLang;
+
+    document.querySelectorAll("[data-i18n]").forEach(function (el) {
+      if (el === els.saveImageBtn && el.disabled) return; // mid-save; busy label owns the text for now
+      el.innerHTML = t(el.getAttribute("data-i18n"));
+    });
+    document.querySelectorAll("[data-i18n-placeholder]").forEach(function (el) {
+      el.placeholder = t(el.getAttribute("data-i18n-placeholder"));
+    });
+    document.querySelectorAll("[data-i18n-aria-label]").forEach(function (el) {
+      el.setAttribute("aria-label", t(el.getAttribute("data-i18n-aria-label")));
+    });
+
+    document.title = I18N.getInstitutionName(currentLang, englishInstitutionName) + t("titleSuffix");
+
+    langButtons.forEach(function (btn) {
+      btn.classList.toggle("active", btn.getAttribute("data-lang") === currentLang);
+    });
+  }
+
+  function setLanguage(lang) {
+    if (lang === currentLang) return;
+    currentLang = lang;
+    I18N.setLang(lang);
+    applyStaticTranslations();
+
+    var query = els.input.value.trim();
+    if (query) {
+      runSearch(query, { scroll: false });
+    }
+  }
+
+  langButtons.forEach(function (btn) {
+    btn.addEventListener("click", function () {
+      setLanguage(btn.getAttribute("data-lang"));
+    });
+  });
+
+  applyStaticTranslations();
 
   function normalize(text) {
     return (text || "").toString().trim().toLowerCase().replace(/\s+/g, " ");
@@ -130,12 +179,10 @@
     });
 
     if (students.length > SUGGESTION_LIMIT) {
+      var remaining = students.length - SUGGESTION_LIMIT;
       var moreLi = document.createElement("li");
       moreLi.className = "suggestions-more";
-      moreLi.textContent =
-        "+" + (students.length - SUGGESTION_LIMIT) + " more match" +
-        (students.length - SUGGESTION_LIMIT === 1 ? "" : "es") +
-        " — type more of the name or PRN to narrow it down";
+      moreLi.textContent = t(remaining === 1 ? "moreMatchesOne" : "moreMatchesOther", { count: remaining });
       els.suggestions.appendChild(moreLi);
     }
 
@@ -172,10 +219,10 @@
 
       var activity = document.createElement("span");
       activity.className = "schedule-activity";
-      activity.textContent = item.activity;
+      activity.textContent = I18N.translateActivity(item.activity, currentLang);
       body.appendChild(activity);
 
-      var location = resolveLocation ? resolveLocation(item) : item.location;
+      var location = resolveLocation ? resolveLocation(item) : I18N.translateLocation(item.location, currentLang);
       if (location) {
         var locationEl = document.createElement("span");
         locationEl.className = "schedule-location";
@@ -189,7 +236,9 @@
     });
   }
 
-  function displayStudent(student) {
+  function displayStudent(student, opts) {
+    opts = opts || {};
+    currentStudent = student;
     hideMessage();
     hideSuggestions();
     els.idleHint.hidden = true;
@@ -204,73 +253,110 @@
     els.detailProgram.textContent = student.program || "—";
 
     var programRooms = (typeof ROOM_BY_PROGRAM === "object" && ROOM_BY_PROGRAM[student.program]) || null;
-    els.detailParentRoom.textContent = (programRooms && programRooms.parent) || "Check Registration Desk";
+    els.detailParentRoom.textContent =
+      (programRooms && I18N.translateLocation(programRooms.parent, currentLang)) || t("checkRegistrationDesk");
 
     var schedule = GROUP_SCHEDULE[student.group] || [];
     renderScheduleList(
       els.scheduleList,
       schedule,
       function (item) {
-        return item.useProgramRoom ? (programRooms && programRooms.student) || "Check Registration Desk" : item.location;
+        return item.useProgramRoom
+          ? (programRooms && I18N.translateLocation(programRooms.student, currentLang)) || t("checkRegistrationDesk")
+          : I18N.translateLocation(item.location, currentLang);
       },
-      "Schedule not available for your group yet. Please check with the Registration Desk."
+      t("scheduleNotAvailable")
     );
 
     renderScheduleList(
       els.parentScheduleList,
       typeof PARENT_SESSIONS === "object" ? PARENT_SESSIONS : [],
       null,
-      "Parent session details will be announced at Registration."
+      t("parentSessionsAnnounced")
     );
 
-    var institution = typeof INSTITUTION_NAME === "string" ? INSTITUTION_NAME : "our campus";
-    els.welcomeText.textContent =
-      "Welcome, " + student.name + "! We're delighted to have you join " +
-      institution + ". Head to your Group " + (student.group || "") +
-      " activities and have a wonderful orientation day!";
+    var institution = I18N.getInstitutionName(currentLang, englishInstitutionName);
+    els.welcomeText.textContent = t("welcomeMessage", {
+      name: student.name,
+      institution: institution,
+      group: student.group || ""
+    });
 
     els.resultCard.hidden = false;
-    els.resultCard.scrollIntoView({ behavior: "smooth", block: "start" });
+    if (opts.scroll !== false) {
+      els.resultCard.scrollIntoView({ behavior: "smooth", block: "start" });
+    }
   }
 
-  function runSearch(rawQuery) {
+  function runSearch(rawQuery, opts) {
+    opts = opts || {};
     var query = (rawQuery || "").trim();
     hideSuggestions();
 
     if (!query) {
-      showMessage("Please enter your PRN or Name to search.", "info");
+      showMessage(t("promptEnterQuery"), "info");
       hideResult();
       return;
     }
 
     var byPrnMatch = findByPrn(query);
     if (byPrnMatch) {
-      displayStudent(byPrnMatch);
+      displayStudent(byPrnMatch, opts);
       return;
     }
 
     var matches = findMatches(query);
     if (matches.length === 1) {
-      displayStudent(matches[0]);
+      displayStudent(matches[0], opts);
       return;
     }
 
     if (matches.length > 1) {
       hideResult();
-      showMessage(
-        matches.length + " students matched “" + query + "”. Select yours from the list below.",
-        "info"
-      );
+      showMessage(t("matchedStudents", { count: matches.length, query: query }), "info");
       showSuggestions(matches);
       return;
     }
 
     hideResult();
-    showMessage(
-      "No student found for “" + query + "”. Please check the spelling, or try your PRN instead. If the issue persists, visit the Registration Desk.",
-      "error"
-    );
+    showMessage(t("noStudentFound", { query: query }), "error");
   }
+
+  function saveResultAsImage() {
+    if (!currentStudent || typeof html2canvas !== "function") return;
+
+    els.saveImageBtn.disabled = true;
+    var restoreLabel = t("saveImageButton");
+    els.saveImageBtn.textContent = t("saveImageButtonBusy");
+
+    var fontsReady = document.fonts && document.fonts.ready ? document.fonts.ready : Promise.resolve();
+
+    fontsReady
+      .then(function () {
+        return html2canvas(els.captureArea, {
+          backgroundColor: "#ffffff",
+          scale: Math.max(2, window.devicePixelRatio || 1),
+          useCORS: true,
+        });
+      })
+      .then(function (canvas) {
+        var link = document.createElement("a");
+        link.href = canvas.toDataURL("image/jpeg", 0.92);
+        link.download = currentStudent.prn + "-orientation-details.jpg";
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
+      })
+      .catch(function () {
+        showMessage(t("saveImageError"), "error");
+      })
+      .finally(function () {
+        els.saveImageBtn.disabled = false;
+        els.saveImageBtn.textContent = restoreLabel;
+      });
+  }
+
+  els.saveImageBtn.addEventListener("click", saveResultAsImage);
 
   els.form.addEventListener("submit", function (e) {
     e.preventDefault();

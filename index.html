@@ -7,7 +7,7 @@
 <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🎓</text></svg>" />
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&family=Inter:wght@400;500;600;700&family=Noto+Sans+Devanagari:wght@400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css" />
 </head>
 <body>
@@ -16,7 +16,12 @@
   <div class="header-inner">
     <div class="brand">
       <img class="brand-logo" src="UniversityLogo.webp" alt="MIT Vishwaprayaag University" />
-      <span class="brand-subtitle">Student Orientation Portal</span>
+      <span class="brand-subtitle" data-i18n="brandSubtitle">Student Orientation Portal</span>
+    </div>
+    <div class="lang-switch" id="langSwitch" role="group" aria-label="Language">
+      <button type="button" class="lang-btn" data-lang="en">English</button>
+      <button type="button" class="lang-btn" data-lang="mr">मराठी</button>
+      <button type="button" class="lang-btn" data-lang="hi">हिंदी</button>
     </div>
   </div>
 </header>
@@ -24,8 +29,8 @@
 <main class="page">
 
   <section class="hero">
-    <h1>Find Your Orientation Group</h1>
-    <p>Enter your <strong>PRN</strong> or <strong>Name</strong> to see your group, room and today's schedule.</p>
+    <h1 data-i18n="heroTitle">Find Your Orientation Group</h1>
+    <p data-i18n="heroSubtitle">Enter your <strong>PRN</strong> or <strong>Name</strong> to see your group, room and today's schedule.</p>
 
     <form id="searchForm" class="search-form" autocomplete="off">
       <div class="search-box">
@@ -38,10 +43,12 @@
           placeholder="Enter PRN or Name (e.g. SCFP126001 or Perala Nikita Ramkrishana)"
           aria-label="Search by PRN or Name"
           inputmode="search"
+          data-i18n-placeholder="searchPlaceholder"
+          data-i18n-aria-label="searchAriaLabel"
         />
-        <button type="button" id="clearBtn" class="clear-btn" aria-label="Clear search" hidden>✕</button>
+        <button type="button" id="clearBtn" class="clear-btn" aria-label="Clear search" data-i18n-aria-label="clearAriaLabel" hidden>✕</button>
       </div>
-      <button type="submit" class="search-btn">Search</button>
+      <button type="submit" class="search-btn" data-i18n="searchButton">Search</button>
     </form>
 
     <ul id="suggestions" class="suggestions" hidden></ul>
@@ -50,58 +57,66 @@
   <section id="messageArea" class="message-area" hidden></section>
 
   <section id="resultCard" class="result-card" hidden>
-    <div class="result-header">
-      <div class="group-badge" id="groupBadge">G1</div>
-      <div class="result-id">
-        <h2 id="studentName">Student Name</h2>
-        <p class="result-sub">
-          <span id="studentPrn"></span> &nbsp;·&nbsp; <span id="studentProgram"></span>
-        </p>
+    <div id="captureArea" class="capture-area">
+      <div class="result-header">
+        <div class="group-badge" id="groupBadge">G1</div>
+        <div class="result-id">
+          <h2 id="studentName">Student Name</h2>
+          <p class="result-sub">
+            <span id="studentPrn"></span> &nbsp;·&nbsp; <span id="studentProgram"></span>
+          </p>
+        </div>
+      </div>
+
+      <div class="detail-grid">
+        <div class="detail-item">
+          <span class="detail-label" data-i18n="groupLabel">Group</span>
+          <span class="detail-value" id="detailGroup">—</span>
+        </div>
+        <div class="detail-item">
+          <span class="detail-label" data-i18n="prnLabel">PRN</span>
+          <span class="detail-value" id="detailPrn">—</span>
+        </div>
+        <div class="detail-item">
+          <span class="detail-label" data-i18n="programLabel">Program</span>
+          <span class="detail-value" id="detailProgram">—</span>
+        </div>
+        <div class="detail-item">
+          <span class="detail-label" data-i18n="parentSeatingLabel">Parent Seating (10:00–11:00 AM)</span>
+          <span class="detail-value" id="detailParentRoom">—</span>
+        </div>
+      </div>
+
+      <h3 class="schedule-title" data-i18n="todaysScheduleTitle">Today's Schedule</h3>
+      <ol class="schedule-list" id="scheduleList"></ol>
+
+      <h3 class="schedule-title" data-i18n="forParentsTitle">For Parents</h3>
+      <ol class="schedule-list" id="parentScheduleList"></ol>
+
+      <div class="welcome-message">
+        <p id="welcomeText"></p>
       </div>
     </div>
 
-    <div class="detail-grid">
-      <div class="detail-item">
-        <span class="detail-label">Group</span>
-        <span class="detail-value" id="detailGroup">—</span>
-      </div>
-      <div class="detail-item">
-        <span class="detail-label">PRN</span>
-        <span class="detail-value" id="detailPrn">—</span>
-      </div>
-      <div class="detail-item">
-        <span class="detail-label">Program</span>
-        <span class="detail-value" id="detailProgram">—</span>
-      </div>
-      <div class="detail-item">
-        <span class="detail-label">Parent Seating (10:00–11:00 AM)</span>
-        <span class="detail-value" id="detailParentRoom">—</span>
-      </div>
-    </div>
-
-    <h3 class="schedule-title">Today's Schedule</h3>
-    <ol class="schedule-list" id="scheduleList"></ol>
-
-    <h3 class="schedule-title">For Parents</h3>
-    <ol class="schedule-list" id="parentScheduleList"></ol>
-
-    <div class="welcome-message">
-      <p id="welcomeText"></p>
+    <div class="result-actions">
+      <button type="button" id="saveImageBtn" class="save-image-btn" data-i18n="saveImageButton">Save as Image</button>
     </div>
   </section>
 
   <section id="idleHint" class="idle-hint">
     <div class="idle-hint-icon">🔍</div>
-    <p>Your details will appear here once you search.</p>
+    <p data-i18n="idleHintText">Your details will appear here once you search.</p>
   </section>
 
 </main>
 
 <footer class="site-footer">
-  <p>Having trouble finding your details? Please visit the Registration Desk for assistance.</p>
+  <p data-i18n="footerText">Having trouble finding your details? Please visit the Registration Desk for assistance.</p>
 </footer>
 
 <script src="data.js"></script>
+<script src="translations.js"></script>
+<script src="html2canvas.min.js"></script>
 <script src="app.js"></script>
 </body>
 </html>
