@@ -32,9 +32,16 @@ entirely in the browser and can be hosted anywhere that serves static files.
 
 ## Updating the schedule
 
-The group-wise session plan (times, activities, rooms) lives in the
-`GROUP_SCHEDULE` dictionary near the top of `generate_data.py` — edit it there,
+The day's session plan lives in `generate_data.py`, edited in two places,
 then re-run the script. It is **not** editable from the Excel file.
+
+- `GROUP_SCHEDULE` — the time/activity track for each group (G1-G4 run the
+  LinkedIn Workshop/Cyber Security block first, G5-G8 run
+  Citizenship & Responsibility/Campus Tour first, so both halves aren't in
+  the Auditorium at once).
+- `ROOM_BY_PROGRAM` — each program's registration room. Room and group don't
+  line up 1:1, so the registration row is filled in per-student from this
+  table rather than baked into `GROUP_SCHEDULE`.
 
 ## Running locally
 

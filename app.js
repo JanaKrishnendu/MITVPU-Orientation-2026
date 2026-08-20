@@ -182,11 +182,14 @@
         activity.textContent = item.activity;
         body.appendChild(activity);
 
-        if (item.location) {
-          var location = document.createElement("span");
-          location.className = "schedule-location";
-          location.textContent = item.location;
-          body.appendChild(location);
+        var location = item.useProgramRoom
+          ? (typeof ROOM_BY_PROGRAM === "object" && ROOM_BY_PROGRAM[student.program]) || "Check Registration Desk"
+          : item.location;
+        if (location) {
+          var locationEl = document.createElement("span");
+          locationEl.className = "schedule-location";
+          locationEl.textContent = location;
+          body.appendChild(locationEl);
         }
 
         li.appendChild(time);

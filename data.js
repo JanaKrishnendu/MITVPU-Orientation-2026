@@ -1571,8 +1571,9 @@ const GROUP_SCHEDULE = {
   "G1": [
     {
       "time": "10:00 AM – 11:00 AM",
-      "activity": "Registration",
-      "location": "Room 202 (2nd Floor)"
+      "activity": "Registration Session - I",
+      "location": "",
+      "useProgramRoom": true
     },
     {
       "time": "11:15 AM – 12:00 PM",
@@ -1581,30 +1582,41 @@ const GROUP_SCHEDULE = {
     },
     {
       "time": "12:15 PM – 1:00 PM",
-      "activity": "Citizenship & Responsibility",
-      "location": ""
-    },
-    {
-      "time": "1:00 PM – 2:00 PM",
-      "activity": "Lunch Break + Registration",
-      "location": ""
-    },
-    {
-      "time": "2:00 PM – 2:45 PM",
       "activity": "Cyber Security",
       "location": "Auditorium (6th Floor)"
     },
     {
+      "time": "1:00 PM – 2:00 PM",
+      "activity": "Lunch / Registration Session - II",
+      "location": ""
+    },
+    {
+      "time": "2:00 PM – 2:45 PM",
+      "activity": "Citizenship & Responsibility",
+      "location": ""
+    },
+    {
       "time": "3:00 PM – 3:45 PM",
       "activity": "Campus Tour",
+      "location": ""
+    },
+    {
+      "time": "4:30 PM – 5:15 PM",
+      "activity": "Formal Function",
+      "location": ""
+    },
+    {
+      "time": "5:30 PM – 6:15 PM",
+      "activity": "Cultural Program",
       "location": ""
     }
   ],
   "G2": [
     {
       "time": "10:00 AM – 11:00 AM",
-      "activity": "Registration",
-      "location": "Room 204 (2nd Floor)"
+      "activity": "Registration Session - I",
+      "location": "",
+      "useProgramRoom": true
     },
     {
       "time": "11:15 AM – 12:00 PM",
@@ -1613,30 +1625,41 @@ const GROUP_SCHEDULE = {
     },
     {
       "time": "12:15 PM – 1:00 PM",
-      "activity": "Citizenship & Responsibility",
-      "location": ""
-    },
-    {
-      "time": "1:00 PM – 2:00 PM",
-      "activity": "Lunch Break + Registration",
-      "location": ""
-    },
-    {
-      "time": "2:00 PM – 2:45 PM",
       "activity": "Cyber Security",
       "location": "Auditorium (6th Floor)"
     },
     {
+      "time": "1:00 PM – 2:00 PM",
+      "activity": "Lunch / Registration Session - II",
+      "location": ""
+    },
+    {
+      "time": "2:00 PM – 2:45 PM",
+      "activity": "Citizenship & Responsibility",
+      "location": ""
+    },
+    {
       "time": "3:00 PM – 3:45 PM",
       "activity": "Campus Tour",
+      "location": ""
+    },
+    {
+      "time": "4:30 PM – 5:15 PM",
+      "activity": "Formal Function",
+      "location": ""
+    },
+    {
+      "time": "5:30 PM – 6:15 PM",
+      "activity": "Cultural Program",
       "location": ""
     }
   ],
   "G3": [
     {
       "time": "10:00 AM – 11:00 AM",
-      "activity": "Registration",
-      "location": "Room 219 (2nd Floor)"
+      "activity": "Registration Session - I",
+      "location": "",
+      "useProgramRoom": true
     },
     {
       "time": "11:15 AM – 12:00 PM",
@@ -1645,30 +1668,41 @@ const GROUP_SCHEDULE = {
     },
     {
       "time": "12:15 PM – 1:00 PM",
-      "activity": "Citizenship & Responsibility",
-      "location": ""
-    },
-    {
-      "time": "1:00 PM – 2:00 PM",
-      "activity": "Lunch Break + Registration",
-      "location": ""
-    },
-    {
-      "time": "2:00 PM – 2:45 PM",
       "activity": "Cyber Security",
       "location": "Auditorium (6th Floor)"
     },
     {
+      "time": "1:00 PM – 2:00 PM",
+      "activity": "Lunch / Registration Session - II",
+      "location": ""
+    },
+    {
+      "time": "2:00 PM – 2:45 PM",
+      "activity": "Citizenship & Responsibility",
+      "location": ""
+    },
+    {
       "time": "3:00 PM – 3:45 PM",
       "activity": "Campus Tour",
+      "location": ""
+    },
+    {
+      "time": "4:30 PM – 5:15 PM",
+      "activity": "Formal Function",
+      "location": ""
+    },
+    {
+      "time": "5:30 PM – 6:15 PM",
+      "activity": "Cultural Program",
       "location": ""
     }
   ],
   "G4": [
     {
       "time": "10:00 AM – 11:00 AM",
-      "activity": "Registration",
-      "location": "Room 213 (2nd Floor)"
+      "activity": "Registration Session - I",
+      "location": "",
+      "useProgramRoom": true
     },
     {
       "time": "11:15 AM – 12:00 PM",
@@ -1677,30 +1711,41 @@ const GROUP_SCHEDULE = {
     },
     {
       "time": "12:15 PM – 1:00 PM",
-      "activity": "Citizenship & Responsibility",
-      "location": ""
+      "activity": "Cyber Security",
+      "location": "Auditorium (6th Floor)"
     },
     {
       "time": "1:00 PM – 2:00 PM",
-      "activity": "Lunch Break + Registration",
+      "activity": "Lunch / Registration Session - II",
       "location": ""
     },
     {
       "time": "2:00 PM – 2:45 PM",
-      "activity": "Cyber Security",
-      "location": "Computing Auditorium"
+      "activity": "Citizenship & Responsibility",
+      "location": ""
     },
     {
       "time": "3:00 PM – 3:45 PM",
       "activity": "Campus Tour",
+      "location": ""
+    },
+    {
+      "time": "4:30 PM – 5:15 PM",
+      "activity": "Formal Function",
+      "location": ""
+    },
+    {
+      "time": "5:30 PM – 6:15 PM",
+      "activity": "Cultural Program",
       "location": ""
     }
   ],
   "G5": [
     {
       "time": "10:00 AM – 11:00 AM",
-      "activity": "Registration",
-      "location": "Room 317 (3rd Floor)"
+      "activity": "Registration Session - I",
+      "location": "",
+      "useProgramRoom": true
     },
     {
       "time": "11:15 AM – 12:00 PM",
@@ -1709,30 +1754,41 @@ const GROUP_SCHEDULE = {
     },
     {
       "time": "12:15 PM – 1:00 PM",
-      "activity": "LinkedIn Workshop",
-      "location": "Auditorium (6th Floor)"
+      "activity": "Campus Tour",
+      "location": ""
     },
     {
       "time": "1:00 PM – 2:00 PM",
-      "activity": "Lunch Break + Registration",
+      "activity": "Lunch / Registration Session - II",
       "location": ""
     },
     {
       "time": "2:00 PM – 2:45 PM",
-      "activity": "Campus Tour",
-      "location": ""
+      "activity": "LinkedIn Workshop",
+      "location": "Auditorium (6th Floor)"
     },
     {
       "time": "3:00 PM – 3:45 PM",
       "activity": "Cyber Security",
       "location": "Auditorium (6th Floor)"
+    },
+    {
+      "time": "4:30 PM – 5:15 PM",
+      "activity": "Formal Function",
+      "location": ""
+    },
+    {
+      "time": "5:30 PM – 6:15 PM",
+      "activity": "Cultural Program",
+      "location": ""
     }
   ],
   "G6": [
     {
       "time": "10:00 AM – 11:00 AM",
-      "activity": "Registration",
-      "location": "Room 304 (3rd Floor)"
+      "activity": "Registration Session - I",
+      "location": "",
+      "useProgramRoom": true
     },
     {
       "time": "11:15 AM – 12:00 PM",
@@ -1741,30 +1797,41 @@ const GROUP_SCHEDULE = {
     },
     {
       "time": "12:15 PM – 1:00 PM",
-      "activity": "LinkedIn Workshop",
-      "location": "Auditorium (6th Floor)"
-    },
-    {
-      "time": "1:00 PM – 2:00 PM",
-      "activity": "Lunch Break + Registration",
-      "location": ""
-    },
-    {
-      "time": "2:00 PM – 2:45 PM",
       "activity": "Campus Tour",
       "location": ""
     },
     {
+      "time": "1:00 PM – 2:00 PM",
+      "activity": "Lunch / Registration Session - II",
+      "location": ""
+    },
+    {
+      "time": "2:00 PM – 2:45 PM",
+      "activity": "LinkedIn Workshop",
+      "location": "Auditorium (6th Floor)"
+    },
+    {
       "time": "3:00 PM – 3:45 PM",
       "activity": "Cyber Security",
-      "location": "Computing Auditorium"
+      "location": "Auditorium (6th Floor)"
+    },
+    {
+      "time": "4:30 PM – 5:15 PM",
+      "activity": "Formal Function",
+      "location": ""
+    },
+    {
+      "time": "5:30 PM – 6:15 PM",
+      "activity": "Cultural Program",
+      "location": ""
     }
   ],
   "G7": [
     {
       "time": "10:00 AM – 11:00 AM",
-      "activity": "Registration",
-      "location": "Room 402 (4th Floor)"
+      "activity": "Registration Session - I",
+      "location": "",
+      "useProgramRoom": true
     },
     {
       "time": "11:15 AM – 12:00 PM",
@@ -1773,30 +1840,41 @@ const GROUP_SCHEDULE = {
     },
     {
       "time": "12:15 PM – 1:00 PM",
-      "activity": "LinkedIn Workshop",
-      "location": "Auditorium (6th Floor)"
-    },
-    {
-      "time": "1:00 PM – 2:00 PM",
-      "activity": "Lunch Break + Registration",
-      "location": ""
-    },
-    {
-      "time": "2:00 PM – 2:45 PM",
       "activity": "Campus Tour",
       "location": ""
     },
     {
+      "time": "1:00 PM – 2:00 PM",
+      "activity": "Lunch / Registration Session - II",
+      "location": ""
+    },
+    {
+      "time": "2:00 PM – 2:45 PM",
+      "activity": "LinkedIn Workshop",
+      "location": "Auditorium (6th Floor)"
+    },
+    {
       "time": "3:00 PM – 3:45 PM",
       "activity": "Cyber Security",
-      "location": "Computing Auditorium"
+      "location": "Auditorium (6th Floor)"
+    },
+    {
+      "time": "4:30 PM – 5:15 PM",
+      "activity": "Formal Function",
+      "location": ""
+    },
+    {
+      "time": "5:30 PM – 6:15 PM",
+      "activity": "Cultural Program",
+      "location": ""
     }
   ],
   "G8": [
     {
       "time": "10:00 AM – 11:00 AM",
-      "activity": "Registration",
-      "location": "Room 502 (5th Floor)"
+      "activity": "Registration Session - I",
+      "location": "",
+      "useProgramRoom": true
     },
     {
       "time": "11:15 AM – 12:00 PM",
@@ -1805,23 +1883,51 @@ const GROUP_SCHEDULE = {
     },
     {
       "time": "12:15 PM – 1:00 PM",
-      "activity": "LinkedIn Workshop",
-      "location": "Auditorium (6th Floor)"
+      "activity": "Campus Tour",
+      "location": ""
     },
     {
       "time": "1:00 PM – 2:00 PM",
-      "activity": "Lunch Break + Registration",
+      "activity": "Lunch / Registration Session - II",
       "location": ""
     },
     {
       "time": "2:00 PM – 2:45 PM",
-      "activity": "Campus Tour",
-      "location": ""
+      "activity": "LinkedIn Workshop",
+      "location": "Auditorium (6th Floor)"
     },
     {
       "time": "3:00 PM – 3:45 PM",
       "activity": "Cyber Security",
       "location": "Auditorium (6th Floor)"
+    },
+    {
+      "time": "4:30 PM – 5:15 PM",
+      "activity": "Formal Function",
+      "location": ""
+    },
+    {
+      "time": "5:30 PM – 6:15 PM",
+      "activity": "Cultural Program",
+      "location": ""
     }
   ]
+};
+
+const ROOM_BY_PROGRAM = {
+  "MCA": "Room 219 (2nd Floor)",
+  "B.Tech. AIML": "Room 317 (3rd Floor)",
+  "B.Tech. ECE": "Room 202 (2nd Floor)",
+  "B.Tech. ECE-Lateral Entry": "Room 202 (2nd Floor)",
+  "B.Tech. IT-Lateral Entry": "Room 202 (2nd Floor)",
+  "B.Tech. CSE": "Room 304 (3rd Floor)",
+  "BCA": "Room 306 (3rd Floor)",
+  "B.Pharm": "Room 517 (5th Floor)",
+  "B.Des.": "Room 410 (4th Floor)",
+  "B.Sc. Textile": "Room 410 (4th Floor)",
+  "B.SC Animation & VFX": "Room 410 (4th Floor)",
+  "MBA": "Room 501 (5th Floor)",
+  "MBA Pharma": "Room 501 (5th Floor)",
+  "BBA": "Room 510 (5th Floor)",
+  "B.Com.": "Room 515 (5th Floor)"
 };

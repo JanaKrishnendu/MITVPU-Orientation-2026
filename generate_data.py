@@ -15,74 +15,72 @@ OUTPUT_JS = "data.js"
 
 INSTITUTION_NAME = "MIT Vishwaprayaag University Solapur"
 
-# Group-wise session plan, transcribed from the orientation schedule image.
-# Each entry: time slot, activity, and location (room / venue) if the
-# schedule specifies one.
+# Registration room per program (School/Program → Student room), transcribed
+# from the "Room details" sheet. The first digit of the room number is its
+# floor (per the accompanying room-location note); Auditorium is 6th floor.
+_ORDINAL_SUFFIX = {"1": "st", "2": "nd", "3": "rd"}
+
+
+def _room_label(room_no):
+    floor_digit = room_no[0]
+    suffix = _ORDINAL_SUFFIX.get(floor_digit, "th")
+    return f"Room {room_no} ({floor_digit}{suffix} Floor)"
+
+
+ROOM_BY_PROGRAM = {
+    "MCA": _room_label("219"),
+    "B.Tech. AIML": _room_label("317"),
+    "B.Tech. ECE": _room_label("202"),
+    "B.Tech. ECE-Lateral Entry": _room_label("202"),
+    "B.Tech. IT-Lateral Entry": _room_label("202"),
+    "B.Tech. CSE": _room_label("304"),
+    "BCA": _room_label("306"),
+    "B.Pharm": _room_label("517"),
+    "B.Des.": _room_label("410"),
+    "B.Sc. Textile": _room_label("410"),
+    "B.SC Animation & VFX": _room_label("410"),
+    "MBA": _room_label("501"),
+    "MBA Pharma": _room_label("501"),
+    "BBA": _room_label("510"),
+    "B.Com.": _room_label("515"),
+}
+
+AUDITORIUM = "Auditorium (6th Floor)"
+
+# Student Induction Program 2026-27 master schedule. Groups G1-G4 and G5-G8
+# run the LinkedIn Workshop / Cyber Security / Citizenship & Responsibility /
+# Campus Tour block in opposite order so both halves can share the
+# Auditorium. Registration's location is filled in per-student from
+# ROOM_BY_PROGRAM (app.js), since group and program don't line up 1:1.
+_EARLY_TRACK = [
+    {"time": "10:00 AM – 11:00 AM", "activity": "Registration Session - I", "location": "", "useProgramRoom": True},
+    {"time": "11:15 AM – 12:00 PM", "activity": "LinkedIn Workshop", "location": AUDITORIUM},
+    {"time": "12:15 PM – 1:00 PM", "activity": "Cyber Security", "location": AUDITORIUM},
+    {"time": "1:00 PM – 2:00 PM", "activity": "Lunch / Registration Session - II", "location": ""},
+    {"time": "2:00 PM – 2:45 PM", "activity": "Citizenship & Responsibility", "location": ""},
+    {"time": "3:00 PM – 3:45 PM", "activity": "Campus Tour", "location": ""},
+    {"time": "4:30 PM – 5:15 PM", "activity": "Formal Function", "location": ""},
+    {"time": "5:30 PM – 6:15 PM", "activity": "Cultural Program", "location": ""},
+]
+_LATE_TRACK = [
+    {"time": "10:00 AM – 11:00 AM", "activity": "Registration Session - I", "location": "", "useProgramRoom": True},
+    {"time": "11:15 AM – 12:00 PM", "activity": "Citizenship & Responsibility", "location": ""},
+    {"time": "12:15 PM – 1:00 PM", "activity": "Campus Tour", "location": ""},
+    {"time": "1:00 PM – 2:00 PM", "activity": "Lunch / Registration Session - II", "location": ""},
+    {"time": "2:00 PM – 2:45 PM", "activity": "LinkedIn Workshop", "location": AUDITORIUM},
+    {"time": "3:00 PM – 3:45 PM", "activity": "Cyber Security", "location": AUDITORIUM},
+    {"time": "4:30 PM – 5:15 PM", "activity": "Formal Function", "location": ""},
+    {"time": "5:30 PM – 6:15 PM", "activity": "Cultural Program", "location": ""},
+]
 GROUP_SCHEDULE = {
-    "G1": [
-        {"time": "10:00 AM – 11:00 AM", "activity": "Registration", "location": "Room 202 (2nd Floor)"},
-        {"time": "11:15 AM – 12:00 PM", "activity": "LinkedIn Workshop", "location": "Auditorium (6th Floor)"},
-        {"time": "12:15 PM – 1:00 PM", "activity": "Citizenship & Responsibility", "location": ""},
-        {"time": "1:00 PM – 2:00 PM", "activity": "Lunch Break + Registration", "location": ""},
-        {"time": "2:00 PM – 2:45 PM", "activity": "Cyber Security", "location": "Auditorium (6th Floor)"},
-        {"time": "3:00 PM – 3:45 PM", "activity": "Campus Tour", "location": ""},
-    ],
-    "G2": [
-        {"time": "10:00 AM – 11:00 AM", "activity": "Registration", "location": "Room 204 (2nd Floor)"},
-        {"time": "11:15 AM – 12:00 PM", "activity": "LinkedIn Workshop", "location": "Auditorium (6th Floor)"},
-        {"time": "12:15 PM – 1:00 PM", "activity": "Citizenship & Responsibility", "location": ""},
-        {"time": "1:00 PM – 2:00 PM", "activity": "Lunch Break + Registration", "location": ""},
-        {"time": "2:00 PM – 2:45 PM", "activity": "Cyber Security", "location": "Auditorium (6th Floor)"},
-        {"time": "3:00 PM – 3:45 PM", "activity": "Campus Tour", "location": ""},
-    ],
-    "G3": [
-        {"time": "10:00 AM – 11:00 AM", "activity": "Registration", "location": "Room 219 (2nd Floor)"},
-        {"time": "11:15 AM – 12:00 PM", "activity": "LinkedIn Workshop", "location": "Auditorium (6th Floor)"},
-        {"time": "12:15 PM – 1:00 PM", "activity": "Citizenship & Responsibility", "location": ""},
-        {"time": "1:00 PM – 2:00 PM", "activity": "Lunch Break + Registration", "location": ""},
-        {"time": "2:00 PM – 2:45 PM", "activity": "Cyber Security", "location": "Auditorium (6th Floor)"},
-        {"time": "3:00 PM – 3:45 PM", "activity": "Campus Tour", "location": ""},
-    ],
-    "G4": [
-        {"time": "10:00 AM – 11:00 AM", "activity": "Registration", "location": "Room 213 (2nd Floor)"},
-        {"time": "11:15 AM – 12:00 PM", "activity": "LinkedIn Workshop", "location": "Auditorium (6th Floor)"},
-        {"time": "12:15 PM – 1:00 PM", "activity": "Citizenship & Responsibility", "location": ""},
-        {"time": "1:00 PM – 2:00 PM", "activity": "Lunch Break + Registration", "location": ""},
-        {"time": "2:00 PM – 2:45 PM", "activity": "Cyber Security", "location": "Computing Auditorium"},
-        {"time": "3:00 PM – 3:45 PM", "activity": "Campus Tour", "location": ""},
-    ],
-    "G5": [
-        {"time": "10:00 AM – 11:00 AM", "activity": "Registration", "location": "Room 317 (3rd Floor)"},
-        {"time": "11:15 AM – 12:00 PM", "activity": "Citizenship & Responsibility", "location": ""},
-        {"time": "12:15 PM – 1:00 PM", "activity": "LinkedIn Workshop", "location": "Auditorium (6th Floor)"},
-        {"time": "1:00 PM – 2:00 PM", "activity": "Lunch Break + Registration", "location": ""},
-        {"time": "2:00 PM – 2:45 PM", "activity": "Campus Tour", "location": ""},
-        {"time": "3:00 PM – 3:45 PM", "activity": "Cyber Security", "location": "Auditorium (6th Floor)"},
-    ],
-    "G6": [
-        {"time": "10:00 AM – 11:00 AM", "activity": "Registration", "location": "Room 304 (3rd Floor)"},
-        {"time": "11:15 AM – 12:00 PM", "activity": "Citizenship & Responsibility", "location": ""},
-        {"time": "12:15 PM – 1:00 PM", "activity": "LinkedIn Workshop", "location": "Auditorium (6th Floor)"},
-        {"time": "1:00 PM – 2:00 PM", "activity": "Lunch Break + Registration", "location": ""},
-        {"time": "2:00 PM – 2:45 PM", "activity": "Campus Tour", "location": ""},
-        {"time": "3:00 PM – 3:45 PM", "activity": "Cyber Security", "location": "Computing Auditorium"},
-    ],
-    "G7": [
-        {"time": "10:00 AM – 11:00 AM", "activity": "Registration", "location": "Room 402 (4th Floor)"},
-        {"time": "11:15 AM – 12:00 PM", "activity": "Citizenship & Responsibility", "location": ""},
-        {"time": "12:15 PM – 1:00 PM", "activity": "LinkedIn Workshop", "location": "Auditorium (6th Floor)"},
-        {"time": "1:00 PM – 2:00 PM", "activity": "Lunch Break + Registration", "location": ""},
-        {"time": "2:00 PM – 2:45 PM", "activity": "Campus Tour", "location": ""},
-        {"time": "3:00 PM – 3:45 PM", "activity": "Cyber Security", "location": "Computing Auditorium"},
-    ],
-    "G8": [
-        {"time": "10:00 AM – 11:00 AM", "activity": "Registration", "location": "Room 502 (5th Floor)"},
-        {"time": "11:15 AM – 12:00 PM", "activity": "Citizenship & Responsibility", "location": ""},
-        {"time": "12:15 PM – 1:00 PM", "activity": "LinkedIn Workshop", "location": "Auditorium (6th Floor)"},
-        {"time": "1:00 PM – 2:00 PM", "activity": "Lunch Break + Registration", "location": ""},
-        {"time": "2:00 PM – 2:45 PM", "activity": "Campus Tour", "location": ""},
-        {"time": "3:00 PM – 3:45 PM", "activity": "Cyber Security", "location": "Auditorium (6th Floor)"},
-    ],
+    "G1": _EARLY_TRACK,
+    "G2": _EARLY_TRACK,
+    "G3": _EARLY_TRACK,
+    "G4": _EARLY_TRACK,
+    "G5": _LATE_TRACK,
+    "G6": _LATE_TRACK,
+    "G7": _LATE_TRACK,
+    "G8": _LATE_TRACK,
 }
 
 
@@ -118,6 +116,10 @@ def main():
     if missing_schedule:
         print(f"WARNING: no schedule defined for group(s): {missing_schedule}")
 
+    missing_rooms = sorted({s["program"] for s in students} - set(ROOM_BY_PROGRAM))
+    if missing_rooms:
+        print(f"WARNING: no registration room defined for program(s): {missing_rooms}")
+
     with open(OUTPUT_JS, "w", encoding="utf-8") as f:
         f.write("// Auto-generated by generate_data.py — do not edit by hand.\n")
         f.write("// To update, edit Students Details.xlsx and/or the GROUP_SCHEDULE\n")
@@ -128,6 +130,9 @@ def main():
         f.write(";\n\n")
         f.write("const GROUP_SCHEDULE = ")
         f.write(json.dumps(GROUP_SCHEDULE, ensure_ascii=False, indent=2))
+        f.write(";\n\n")
+        f.write("const ROOM_BY_PROGRAM = ")
+        f.write(json.dumps(ROOM_BY_PROGRAM, ensure_ascii=False, indent=2))
         f.write(";\n")
 
     print(f"Wrote {len(students)} students to {OUTPUT_JS}")
