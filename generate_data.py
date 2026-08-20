@@ -15,9 +15,10 @@ OUTPUT_JS = "data.js"
 
 INSTITUTION_NAME = "MIT Vishwaprayaag University Solapur"
 
-# Registration room per program (School/Program → Student room), transcribed
-# from the "Room details" sheet. The first digit of the room number is its
-# floor (per the accompanying room-location note); Auditorium is 6th floor.
+# Registration room per program (School/Program → Student room, Parent room),
+# transcribed from the "Room details" sheet. The first digit of the room
+# number is its floor (per the accompanying room-location note); Auditorium
+# is 6th floor.
 _ORDINAL_SUFFIX = {"1": "st", "2": "nd", "3": "rd"}
 
 
@@ -28,21 +29,21 @@ def _room_label(room_no):
 
 
 ROOM_BY_PROGRAM = {
-    "MCA": _room_label("219"),
-    "B.Tech. AIML": _room_label("317"),
-    "B.Tech. ECE": _room_label("202"),
-    "B.Tech. ECE-Lateral Entry": _room_label("202"),
-    "B.Tech. IT-Lateral Entry": _room_label("202"),
-    "B.Tech. CSE": _room_label("304"),
-    "BCA": _room_label("306"),
-    "B.Pharm": _room_label("517"),
-    "B.Des.": _room_label("410"),
-    "B.Sc. Textile": _room_label("410"),
-    "B.SC Animation & VFX": _room_label("410"),
-    "MBA": _room_label("501"),
-    "MBA Pharma": _room_label("501"),
-    "BBA": _room_label("510"),
-    "B.Com.": _room_label("515"),
+    "MCA": {"student": _room_label("219"), "parent": _room_label("213")},
+    "B.Tech. AIML": {"student": _room_label("317"), "parent": _room_label("303")},
+    "B.Tech. ECE": {"student": _room_label("202"), "parent": _room_label("204")},
+    "B.Tech. ECE-Lateral Entry": {"student": _room_label("202"), "parent": _room_label("204")},
+    "B.Tech. IT-Lateral Entry": {"student": _room_label("202"), "parent": _room_label("204")},
+    "B.Tech. CSE": {"student": _room_label("304"), "parent": _room_label("305")},
+    "BCA": {"student": _room_label("306"), "parent": _room_label("307")},
+    "B.Pharm": {"student": _room_label("517"), "parent": _room_label("518")},
+    "B.Des.": {"student": _room_label("410"), "parent": _room_label("410")},
+    "B.Sc. Textile": {"student": _room_label("410"), "parent": _room_label("410")},
+    "B.SC Animation & VFX": {"student": _room_label("410"), "parent": _room_label("410")},
+    "MBA": {"student": _room_label("501"), "parent": _room_label("502")},
+    "MBA Pharma": {"student": _room_label("501"), "parent": _room_label("502")},
+    "BBA": {"student": _room_label("510"), "parent": _room_label("511")},
+    "B.Com.": {"student": _room_label("515"), "parent": _room_label("515")},
 }
 
 AUDITORIUM = "Auditorium (6th Floor)"

@@ -16,6 +16,7 @@
     detailGroup: document.getElementById("detailGroup"),
     detailPrn: document.getElementById("detailPrn"),
     detailProgram: document.getElementById("detailProgram"),
+    detailParentRoom: document.getElementById("detailParentRoom"),
     scheduleList: document.getElementById("scheduleList"),
     welcomeText: document.getElementById("welcomeText"),
   };
@@ -158,6 +159,9 @@
     els.detailPrn.textContent = student.prn;
     els.detailProgram.textContent = student.program || "—";
 
+    var programRooms = (typeof ROOM_BY_PROGRAM === "object" && ROOM_BY_PROGRAM[student.program]) || null;
+    els.detailParentRoom.textContent = (programRooms && programRooms.parent) || "Check Registration Desk";
+
     var schedule = GROUP_SCHEDULE[student.group] || [];
     els.scheduleList.innerHTML = "";
     if (schedule.length === 0) {
@@ -183,7 +187,7 @@
         body.appendChild(activity);
 
         var location = item.useProgramRoom
-          ? (typeof ROOM_BY_PROGRAM === "object" && ROOM_BY_PROGRAM[student.program]) || "Check Registration Desk"
+          ? (programRooms && programRooms.student) || "Check Registration Desk"
           : item.location;
         if (location) {
           var locationEl = document.createElement("span");

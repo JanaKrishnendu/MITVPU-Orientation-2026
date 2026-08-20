@@ -1915,19 +1915,64 @@ const GROUP_SCHEDULE = {
 };
 
 const ROOM_BY_PROGRAM = {
-  "MCA": "Room 219 (2nd Floor)",
-  "B.Tech. AIML": "Room 317 (3rd Floor)",
-  "B.Tech. ECE": "Room 202 (2nd Floor)",
-  "B.Tech. ECE-Lateral Entry": "Room 202 (2nd Floor)",
-  "B.Tech. IT-Lateral Entry": "Room 202 (2nd Floor)",
-  "B.Tech. CSE": "Room 304 (3rd Floor)",
-  "BCA": "Room 306 (3rd Floor)",
-  "B.Pharm": "Room 517 (5th Floor)",
-  "B.Des.": "Room 410 (4th Floor)",
-  "B.Sc. Textile": "Room 410 (4th Floor)",
-  "B.SC Animation & VFX": "Room 410 (4th Floor)",
-  "MBA": "Room 501 (5th Floor)",
-  "MBA Pharma": "Room 501 (5th Floor)",
-  "BBA": "Room 510 (5th Floor)",
-  "B.Com.": "Room 515 (5th Floor)"
+  "MCA": {
+    "student": "Room 219 (2nd Floor)",
+    "parent": "Room 213 (2nd Floor)"
+  },
+  "B.Tech. AIML": {
+    "student": "Room 317 (3rd Floor)",
+    "parent": "Room 303 (3rd Floor)"
+  },
+  "B.Tech. ECE": {
+    "student": "Room 202 (2nd Floor)",
+    "parent": "Room 204 (2nd Floor)"
+  },
+  "B.Tech. ECE-Lateral Entry": {
+    "student": "Room 202 (2nd Floor)",
+    "parent": "Room 204 (2nd Floor)"
+  },
+  "B.Tech. IT-Lateral Entry": {
+    "student": "Room 202 (2nd Floor)",
+    "parent": "Room 204 (2nd Floor)"
+  },
+  "B.Tech. CSE": {
+    "student": "Room 304 (3rd Floor)",
+    "parent": "Room 305 (3rd Floor)"
+  },
+  "BCA": {
+    "student": "Room 306 (3rd Floor)",
+    "parent": "Room 307 (3rd Floor)"
+  },
+  "B.Pharm": {
+    "student": "Room 517 (5th Floor)",
+    "parent": "Room 518 (5th Floor)"
+  },
+  "B.Des.": {
+    "student": "Room 410 (4th Floor)",
+    "parent": "Room 410 (4th Floor)"
+  },
+  "B.Sc. Textile": {
+    "student": "Room 410 (4th Floor)",
+    "parent": "Room 410 (4th Floor)"
+  },
+  "B.SC Animation & VFX": {
+    "student": "Room 410 (4th Floor)",
+    "parent": "Room 410 (4th Floor)"
+  },
+  "MBA": {
+    "student": "Room 501 (5th Floor)",
+    "parent": "Room 502 (5th Floor)"
+  },
+  "MBA Pharma": {
+    "student": "Room 501 (5th Floor)",
+    "parent": "Room 502 (5th Floor)"
+  },
+  "BBA": {
+    "student": "Room 510 (5th Floor)",
+    "parent": "Room 511 (5th Floor)"
+  },
+  "B.Com.": {
+    "student": "Room 515 (5th Floor)",
+    "parent": "Room 515 (5th Floor)"
+  }
 };
