@@ -6,964 +6,1564 @@ const INSTITUTION_NAME = "MIT Vishwaprayaag University Solapur";
 
 const STUDENTS = [
   {
-    "prn": "SCFU124088",
-    "name": "Priyanka Sahajrao",
-    "program": "B.Tech CSE",
+    "prn": "SCFP126001",
+    "name": "Perala Nikita Ramkrishana",
+    "program": "MCA",
     "group": "G1"
   },
   {
-    "prn": "SCFU125071",
-    "name": "Shaikh Izhan Samirahmad",
-    "program": "B.Tech CSE",
+    "prn": "SCFP126002",
+    "name": "Bamani Vaishnavi Pramod",
+    "program": "MCA",
     "group": "G1"
   },
   {
-    "prn": "SCFU125072",
-    "name": "Mali Sarang Sunil",
-    "program": "B.Tech CSE",
+    "prn": "SCFP126003",
+    "name": "Bodgal Akshad Kishor",
+    "program": "MCA",
     "group": "G1"
   },
   {
-    "prn": "SCFU125073",
-    "name": "Kore Lakshya Vijaykumar",
-    "program": "B.Tech CSE",
+    "prn": "SCFP126004",
+    "name": "Dhanwani Aashish Vijay",
+    "program": "MCA",
     "group": "G1"
   },
   {
-    "prn": "SCFU125074",
-    "name": "Shrawasti Vijay Dhole",
-    "program": "B.Tech CSE",
+    "prn": "SCFP126005",
+    "name": "Chavan Tejaswini Mayur",
+    "program": "MCA",
     "group": "G1"
   },
   {
-    "prn": "SCFU125075",
-    "name": "Gaikwad Sanjana Samadhan",
-    "program": "B.Tech CSE",
+    "prn": "SCFP126006",
+    "name": "Bhanage Prashant Irrappa",
+    "program": "MCA",
     "group": "G1"
   },
   {
-    "prn": "SCFU125076",
-    "name": "Nadaf Rehan Ahmed Dawal",
-    "program": "B.Tech CSE",
+    "prn": "SCFP126007",
+    "name": "Gund Varun Sanjay",
+    "program": "MCA",
     "group": "G1"
   },
   {
-    "prn": "SCFU125078",
-    "name": "Mohammed Rehan Imran Shai",
-    "program": "B.Tech CSE",
+    "prn": "SCFP126008",
+    "name": "Daund Chetana Pramod",
+    "program": "MCA",
     "group": "G1"
   },
   {
-    "prn": "SCFU125079",
-    "name": "Khandelwal Tanmay Mahesh",
-    "program": "B.Tech CSE",
+    "prn": "SCFP126009",
+    "name": "Jamadar Anjumparavez Mehaboob",
+    "program": "MCA",
     "group": "G1"
   },
   {
-    "prn": "SCFU125080",
-    "name": "Shaikh Yashfiya Amjadhusa",
-    "program": "B.Tech CSE",
+    "prn": "SCFP126010",
+    "name": "Jigajambagi Komal Hanamant",
+    "program": "MCA",
     "group": "G1"
   },
   {
-    "prn": "SCFU125081",
-    "name": "Waychal Vedant Praveen",
-    "program": "B.Tech CSE",
+    "prn": "SCFP126011",
+    "name": "Avachar Sham Shivaji",
+    "program": "MCA",
     "group": "G1"
   },
   {
-    "prn": "SCFU125082",
-    "name": "Madiha Abdul Vahab Maniya",
-    "program": "B.Tech CSE",
+    "prn": "SCFP126012",
+    "name": "Patil Aditya Anmol",
+    "program": "MCA",
     "group": "G1"
   },
   {
-    "prn": "SCFU125083",
-    "name": "Pawar Nikhil Pramod",
-    "program": "B.Tech CSE",
+    "prn": "SCFP126013",
+    "name": "Mushan Shashank Shrikant",
+    "program": "MCA",
     "group": "G1"
   },
   {
-    "prn": "SCFU125084",
-    "name": "Ayachit Prerana Anand",
-    "program": "B.Tech CSE",
+    "prn": "SCFP126014",
+    "name": "Chordiya Roshani Dhanraj",
+    "program": "MCA",
     "group": "G1"
   },
   {
-    "prn": "SCFU125085",
-    "name": "Onkar Birajdar",
-    "program": "B.Tech CSE",
+    "prn": "SCFP126015",
+    "name": "Mandhare Prasad Ambadas",
+    "program": "MCA",
     "group": "G1"
   },
   {
-    "prn": "SCFU125086",
-    "name": "Narwate Arjun Dhondiram",
-    "program": "B.Tech CSE",
+    "prn": "SCFP126016",
+    "name": "Mahimkar Samarth Kashinath",
+    "program": "MCA",
     "group": "G1"
   },
   {
-    "prn": "SCFU125087",
-    "name": "Bhadre Shashwat Dhanappa",
-    "program": "B.Tech CSE",
+    "prn": "SCFP126017",
+    "name": "Vagati Onkar Mahadev",
+    "program": "MCA",
     "group": "G1"
   },
   {
-    "prn": "SCFU125088",
-    "name": "Shaikh Shahnawaz Riyaz Ah",
-    "program": "B.Tech CSE",
+    "prn": "SCFP126018",
+    "name": "Bitodkar Shreya Sudhir",
+    "program": "MCA",
     "group": "G1"
   },
   {
-    "prn": "SCFU125089",
-    "name": "Nadaf Sumaiyya Ismail",
-    "program": "B.Tech CSE",
+    "prn": "SCFP126019",
+    "name": "Mahindrakar Snehal Manohar",
+    "program": "MCA",
     "group": "G1"
   },
   {
-    "prn": "SCFU125090",
-    "name": "Kurude Piyush Dayanand",
-    "program": "B.Tech CSE",
+    "prn": "SCFP126020",
+    "name": "Dhotre rutuja Chandrakant",
+    "program": "MCA",
     "group": "G1"
   },
   {
-    "prn": "SCFU125091",
-    "name": "Ronit Kumar Dalai",
-    "program": "B.Tech CSE",
+    "prn": "SCFP126021",
+    "name": "Kalshetti Ambaresh Laxman",
+    "program": "MCA",
+    "group": "G1"
+  },
+  {
+    "prn": "SCFP126022",
+    "name": "Survase Chetan Shrishail",
+    "program": "MCA",
+    "group": "G1"
+  },
+  {
+    "prn": "SCFP126023",
+    "name": "Kulkarni Dhanshri Dattatray",
+    "program": "MCA",
+    "group": "G1"
+  },
+  {
+    "prn": "SCFP126024",
+    "name": "Moholkar Prem Manoj",
+    "program": "MCA",
+    "group": "G1"
+  },
+  {
+    "prn": "SCFP126025",
+    "name": "Kamareddi Kiran Suresh",
+    "program": "MCA",
+    "group": "G1"
+  },
+  {
+    "prn": "SCFP126026",
+    "name": "Kadam Rushikesh Ganesh",
+    "program": "MCA",
+    "group": "G1"
+  },
+  {
+    "prn": "SCFP126027",
+    "name": "Swami Sneha Karbasayya",
+    "program": "MCA",
+    "group": "G1"
+  },
+  {
+    "prn": "SCFP126028",
+    "name": "Jamadar Saniya Sayyadbasha",
+    "program": "MCA",
+    "group": "G1"
+  },
+  {
+    "prn": "SCFP126029",
+    "name": "Hiremath Shivanjali Shrishail",
+    "program": "MCA",
+    "group": "G1"
+  },
+  {
+    "prn": "SCFP126030",
+    "name": "Sakhare Swati Basaveshwar",
+    "program": "MCA",
+    "group": "G1"
+  },
+  {
+    "prn": "SCFP126031",
+    "name": "Shaikh Afrin Faruk",
+    "program": "MCA",
+    "group": "G1"
+  },
+  {
+    "prn": "SCFP126032",
+    "name": "Birajdar Naeera Mahiboob",
+    "program": "MCA",
+    "group": "G1"
+  },
+  {
+    "prn": "SCFP126033",
+    "name": "Birajdar Ganesh Parmeshwar",
+    "program": "MCA",
+    "group": "G1"
+  },
+  {
+    "prn": "SCFP126034",
+    "name": "Mane Aditya Sunil",
+    "program": "MCA",
+    "group": "G1"
+  },
+  {
+    "prn": "SCFP126035",
+    "name": "Shaikh Ifat Jamir",
+    "program": "MCA",
+    "group": "G1"
+  },
+  {
+    "prn": "SCFU426001",
+    "name": "Yadav Kashmira Rahul",
+    "program": "B.Tech. AIML",
     "group": "G2"
   },
   {
-    "prn": "SCFU125092",
-    "name": "Jadhav Sarthak Sachin",
-    "program": "B.Tech CSE",
+    "prn": "SCFU426002",
+    "name": "Mohite Yash Sachin",
+    "program": "B.Tech. AIML",
     "group": "G2"
   },
   {
-    "prn": "SCFU125093",
-    "name": "Patil Shrisha Pramod",
-    "program": "B.Tech CSE",
+    "prn": "SCFU426003",
+    "name": "Dhumal Aditya Amar",
+    "program": "B.Tech. AIML",
     "group": "G2"
   },
   {
-    "prn": "SCFU125094",
-    "name": "Shinde Rohit Madhav",
-    "program": "B.Tech CSE",
+    "prn": "SCFU426004",
+    "name": "Bagal Janhavi Vasudev",
+    "program": "B.Tech. AIML",
     "group": "G2"
   },
   {
-    "prn": "SCFU125095",
-    "name": "Omkar Kalshetti",
-    "program": "B.Tech CSE",
+    "prn": "SCFU426005",
+    "name": "Chavan Arnav Prabhakar",
+    "program": "B.Tech. AIML",
     "group": "G2"
   },
   {
-    "prn": "SCFU125096",
-    "name": "Farkande Zakwan Akil",
-    "program": "B.Tech CSE",
+    "prn": "SCFU426006",
+    "name": "Khatal Shivraj Sharadchandra",
+    "program": "B.Tech. AIML",
     "group": "G2"
   },
   {
-    "prn": "SCFU125097",
-    "name": "Vishwanth Choudhari",
-    "program": "B.Tech CSE",
+    "prn": "SCFU426007",
+    "name": "Mohmmad Muzammil Adbul Razzak Maygeri",
+    "program": "B.Tech. AIML",
     "group": "G2"
   },
   {
-    "prn": "SCFU125098",
-    "name": "Sayyed Saniya Mehraj Jame",
-    "program": "B.Tech CSE",
+    "prn": "SCFU426008",
+    "name": "Zabiullah Kalinulleh Mangalgiri",
+    "program": "B.Tech. AIML",
     "group": "G2"
   },
   {
-    "prn": "SCFU125099",
-    "name": "Battu Rohan Rajesh",
-    "program": "B.Tech CSE",
+    "prn": "SCFU426009",
+    "name": "Chitte Iresh Yogesh",
+    "program": "B.Tech. AIML",
     "group": "G2"
   },
   {
-    "prn": "SCFU125100",
-    "name": "Om Kashid",
-    "program": "B.Tech CSE",
+    "prn": "SCFU426010",
+    "name": "Abhinash Pandhiary",
+    "program": "B.Tech. AIML",
     "group": "G2"
   },
   {
-    "prn": "SCFU125101",
-    "name": "Khakre Megha Vikas",
-    "program": "B.Tech CSE",
+    "prn": "SCFU426011",
+    "name": "Dhanshetti Vedant Prashant",
+    "program": "B.Tech. AIML",
     "group": "G2"
   },
   {
-    "prn": "SCLU325001",
-    "name": "Harshit Ranbhare",
-    "program": "B.Tech IT (Lateral Entry)",
+    "prn": "SCFU426012",
+    "name": "Jadhav Yashashri Shravan",
+    "program": "B.Tech. AIML",
     "group": "G2"
   },
   {
-    "prn": "SCLU325002",
-    "name": "Kshitij Vinod Gambhire",
-    "program": "B.Tech IT (Lateral Entry)",
+    "prn": "SCFU426013",
+    "name": "Tabib Ayan Farooque",
+    "program": "B.Tech. AIML",
     "group": "G2"
   },
   {
-    "prn": "SCLU325003",
-    "name": "Sachin Shekappa Teggelli",
-    "program": "B.Tech IT (Lateral Entry)",
+    "prn": "SCFU426014",
+    "name": "Randive Rohit Sudhakar",
+    "program": "B.Tech. AIML",
     "group": "G2"
   },
   {
-    "prn": "SCLU325004",
-    "name": "Om Bhosale",
-    "program": "B.Tech IT (Lateral Entry)",
+    "prn": "SCFU426015",
+    "name": "Jadhav varun Shravan",
+    "program": "B.Tech. AIML",
     "group": "G2"
   },
   {
-    "prn": "SCLU325005",
-    "name": "Snehal Kashinath Kalburgi",
-    "program": "B.Tech IT (Lateral Entry)",
+    "prn": "SCFU426016",
+    "name": "Patel Tilak Jagdish",
+    "program": "B.Tech. AIML",
     "group": "G2"
   },
   {
-    "prn": "SCLU325006",
-    "name": "Chinmay Fadtare",
-    "program": "B.Tech IT (Lateral Entry)",
+    "prn": "SCFU426017",
+    "name": "Gaddam Aryan Kashinath",
+    "program": "B.Tech. AIML",
     "group": "G2"
   },
   {
-    "prn": "SCLU325007",
-    "name": "Abhinav surpurkar",
-    "program": "B.Tech IT (Lateral Entry)",
+    "prn": "SCFU426018",
+    "name": "Ghorpade Dhanraj Veersen",
+    "program": "B.Tech. AIML",
     "group": "G2"
   },
   {
-    "prn": "SCLU325008",
-    "name": "Pragati Prakash Nagarkar",
-    "program": "B.Tech IT (Lateral Entry)",
+    "prn": "SCFU426019",
+    "name": "Kharadi Quddus Murtuz",
+    "program": "B.Tech. AIML",
     "group": "G2"
   },
   {
-    "prn": "SCLU325009",
-    "name": "Om bamgonda",
-    "program": "B.Tech IT (Lateral Entry)",
+    "prn": "SCFU426020",
+    "name": "Ganiger Sanjana S",
+    "program": "B.Tech. AIML",
     "group": "G2"
   },
   {
-    "prn": "SCLU325010",
-    "name": "Parinita Ganesh Gurram",
-    "program": "B.Tech IT (Lateral Entry)",
+    "prn": "SCFU426021",
+    "name": "Nadaf Tehreen Nabilal",
+    "program": "B.Tech. AIML",
+    "group": "G2"
+  },
+  {
+    "prn": "SCFU426022",
+    "name": "Nadaf Iram Ismail",
+    "program": "B.Tech. AIML",
+    "group": "G2"
+  },
+  {
+    "prn": "SCFU426023",
+    "name": "Jamadar Abutalha M Rafique",
+    "program": "B.Tech. AIML",
+    "group": "G2"
+  },
+  {
+    "prn": "SEFU126001",
+    "name": "Bogam Aryan Somnath",
+    "program": "B.Tech. ECE",
+    "group": "G2"
+  },
+  {
+    "prn": "SEFU126002",
+    "name": "Mallade Shreya Shrikant",
+    "program": "B.Tech. ECE",
+    "group": "G2"
+  },
+  {
+    "prn": "SEFU126003",
+    "name": "Sherikar Sandesh Shrishail",
+    "program": "B.Tech. ECE",
+    "group": "G2"
+  },
+  {
+    "prn": "SEFU126004",
+    "name": "Gaikwad Anvesh Saklesh",
+    "program": "B.Tech. ECE",
+    "group": "G2"
+  },
+  {
+    "prn": "SEFU126005",
+    "name": "Affan Afaque Ansari",
+    "program": "B.Tech. ECE",
+    "group": "G2"
+  },
+  {
+    "prn": "SEFU126006",
+    "name": "Patil Atharva Ravindra",
+    "program": "B.Tech. ECE",
+    "group": "G2"
+  },
+  {
+    "prn": "SEFU126007",
+    "name": "Nalwar Sumit Basavraj",
+    "program": "B.Tech. ECE",
+    "group": "G2"
+  },
+  {
+    "prn": "SEFU126008",
+    "name": "Kalshetty Samarth Girish",
+    "program": "B.Tech. ECE",
+    "group": "G2"
+  },
+  {
+    "prn": "SEFU126009",
+    "name": "Pawar Aniruddha Pawar",
+    "program": "B.Tech. ECE",
+    "group": "G2"
+  },
+  {
+    "prn": "SCFU126001",
+    "name": "Deshpande Ishvari Anil",
+    "program": "B.Tech. CSE",
     "group": "G3"
   },
   {
-    "prn": "SCLU325011",
-    "name": "Nitin Mali",
-    "program": "B.Tech IT (Lateral Entry)",
+    "prn": "SCFU126002",
+    "name": "Mareddi Gracia Devputra",
+    "program": "B.Tech. CSE",
     "group": "G3"
   },
   {
-    "prn": "SCLU325012",
-    "name": "Hasini .S. kodam",
-    "program": "B.Tech IT (Lateral Entry)",
+    "prn": "SCFU126003",
+    "name": "Patil Abhishek Gaurishankar",
+    "program": "B.Tech. CSE",
     "group": "G3"
   },
   {
-    "prn": "SCLU325013",
-    "name": "Om Swami",
-    "program": "B.Tech IT (Lateral Entry)",
+    "prn": "SCFU126004",
+    "name": "Parit Abhishek Shankar",
+    "program": "B.Tech. CSE",
     "group": "G3"
   },
   {
-    "prn": "SCLU325014",
-    "name": "Sayma Sayyad",
-    "program": "B.Tech IT (Lateral Entry)",
+    "prn": "SCFU126005",
+    "name": "Kardile Shubham Devidas",
+    "program": "B.Tech. CSE",
     "group": "G3"
   },
   {
-    "prn": "SCLU325015",
-    "name": "Sohail Nadaf",
-    "program": "B.Tech IT (Lateral Entry)",
+    "prn": "SCFU126006",
+    "name": "Honparkhe Harshwardhan Dayanand",
+    "program": "B.Tech. CSE",
     "group": "G3"
   },
   {
-    "prn": "SCLU325016",
-    "name": "Mohammed Gause Darbarwala",
-    "program": "B.Tech IT (Lateral Entry)",
+    "prn": "SCFU126007",
+    "name": "Kotmale Pranav Pandurang",
+    "program": "B.Tech. CSE",
     "group": "G3"
   },
   {
-    "prn": "SCLU325017",
-    "name": "Manthan Patil",
-    "program": "B.Tech IT (Lateral Entry)",
+    "prn": "SCFU126008",
+    "name": "Gaikwad Digviraj Prakash",
+    "program": "B.Tech. CSE",
     "group": "G3"
   },
   {
-    "prn": "SCLU325018",
-    "name": "Nandini chakral",
-    "program": "B.Tech IT (Lateral Entry)",
+    "prn": "SCFU126009",
+    "name": "Deshpande Shreya Rahul",
+    "program": "B.Tech. CSE",
     "group": "G3"
   },
   {
-    "prn": "SCLU325019",
-    "name": "vaibhav",
-    "program": "B.Tech IT (Lateral Entry)",
+    "prn": "SCFU126010",
+    "name": "Mohammad Abdyl Lateef Furqan",
+    "program": "B.Tech. CSE",
     "group": "G3"
   },
   {
-    "prn": "SCLU325020",
-    "name": "Samarth Nitin Malwadkar",
-    "program": "B.Tech IT (Lateral Entry)",
+    "prn": "SCFU126011",
+    "name": "Gophane Kedar Sashikant",
+    "program": "B.Tech. CSE",
     "group": "G3"
   },
   {
-    "prn": "SCLU325021",
-    "name": "Harshvrdhan Sirsat",
-    "program": "B.Tech IT (Lateral Entry)",
+    "prn": "SCFU126012",
+    "name": "Rathod Samarth Chandrakant",
+    "program": "B.Tech. CSE",
     "group": "G3"
   },
   {
-    "prn": "SCLU325022",
-    "name": "Mrunali Adam",
-    "program": "B.Tech IT (Lateral Entry)",
+    "prn": "SCFU126013",
+    "name": "Badewale Abuzidan Abdul",
+    "program": "B.Tech. CSE",
     "group": "G3"
   },
   {
-    "prn": "SCLU325023",
-    "name": "Ajinkya Jalindar Shete",
-    "program": "B.Tech IT (Lateral Entry)",
+    "prn": "SCFU126014",
+    "name": "Pandit Atharv Dnyaneshwar",
+    "program": "B.Tech. CSE",
     "group": "G3"
   },
   {
-    "prn": "SCLU325024",
-    "name": "Aryan Archit Chavan",
-    "program": "B.Tech IT (Lateral Entry)",
+    "prn": "SCFU126015",
+    "name": "Chandana Vijay Kaldhone",
+    "program": "B.Tech. CSE",
     "group": "G3"
   },
   {
-    "prn": "SCLU325026",
-    "name": "amol lange",
-    "program": "B.Tech IT (Lateral Entry)",
+    "prn": "SCFU126016",
+    "name": "Dhaygude Saksham Ulhas",
+    "program": "B.Tech. CSE",
     "group": "G3"
   },
   {
-    "prn": "SCLU325027",
-    "name": "Pranita Prashant Jadhav",
-    "program": "B.Tech IT (Lateral Entry)",
+    "prn": "SCFU126017",
+    "name": "Patil Harsh Nagraj",
+    "program": "B.Tech. CSE",
     "group": "G3"
   },
   {
-    "prn": "SCLU325028",
-    "name": "Varad Suraj Patil",
-    "program": "B.Tech IT (Lateral Entry)",
+    "prn": "SCFU126018",
+    "name": "Gaikwad Pruthviraj Sunil",
+    "program": "B.Tech. CSE",
     "group": "G3"
   },
   {
-    "prn": "SCLU325029",
-    "name": "M Sadique Kampli",
-    "program": "B.Tech IT (Lateral Entry)",
+    "prn": "SCFU126019",
+    "name": "Vhasure Rohit Ratnkant",
+    "program": "B.Tech. CSE",
     "group": "G3"
   },
   {
-    "prn": "SCLU325030",
-    "name": "Vaibhavi Kumbhare",
-    "program": "B.Tech IT (Lateral Entry)",
+    "prn": "SCFU126020",
+    "name": "Kamlapure Sunil Harshita",
+    "program": "B.Tech. CSE",
     "group": "G3"
   },
   {
-    "prn": "SCLU325031",
-    "name": "BABBUR SIDHARTHA PRASAD",
-    "program": "B.Tech IT (Lateral Entry)",
+    "prn": "SCFU126021",
+    "name": "Bandpatte Prem Bhimashankar",
+    "program": "B.Tech. CSE",
+    "group": "G3"
+  },
+  {
+    "prn": "SCFU126022",
+    "name": "Horginmath Ganesh Gurushantling",
+    "program": "B.Tech. CSE",
+    "group": "G3"
+  },
+  {
+    "prn": "SCFU126023",
+    "name": "Panda Karttik Kumar",
+    "program": "B.Tech. CSE",
+    "group": "G3"
+  },
+  {
+    "prn": "SCFU126024",
+    "name": "Birajdar Mohini Vaijanath",
+    "program": "B.Tech. CSE",
+    "group": "G3"
+  },
+  {
+    "prn": "SCFU126025",
+    "name": "Patil Arya Laxman",
+    "program": "B.Tech. CSE",
+    "group": "G3"
+  },
+  {
+    "prn": "SCFU126026",
+    "name": "Bhonge Eklavya Vinod",
+    "program": "B.Tech. CSE",
+    "group": "G3"
+  },
+  {
+    "prn": "SCFU126027",
+    "name": "Kumthe Sabahat Hussain Fazal Hussain",
+    "program": "B.Tech. CSE",
+    "group": "G3"
+  },
+  {
+    "prn": "SCFU126028",
+    "name": "Padaliya Shreya Alpesh",
+    "program": "B.Tech. CSE",
+    "group": "G3"
+  },
+  {
+    "prn": "SCFU126029",
+    "name": "Jadhav Vaibhavi Ramesh",
+    "program": "B.Tech. CSE",
+    "group": "G3"
+  },
+  {
+    "prn": "SCFU126030",
+    "name": "Jamadar Atharva Neminath",
+    "program": "B.Tech. CSE",
+    "group": "G3"
+  },
+  {
+    "prn": "SCFU126031",
+    "name": "Malique Rehan Mushtaque ahemed shaikh",
+    "program": "B.Tech. CSE",
+    "group": "G3"
+  },
+  {
+    "prn": "SCFU126032",
+    "name": "Sambharam Madhavi Shriniwas",
+    "program": "B.Tech. CSE",
+    "group": "G3"
+  },
+  {
+    "prn": "SCLU326001",
+    "name": "Mulla Aatif Nisarahmed",
+    "program": "B.Tech. IT-Lateral Entry",
     "group": "G4"
   },
   {
-    "prn": "SCLU325032",
-    "name": "Bhumika Sanga",
-    "program": "B.Tech IT (Lateral Entry)",
+    "prn": "SCLU326002",
+    "name": "Sayyed Sahil Sattar",
+    "program": "B.Tech. IT-Lateral Entry",
     "group": "G4"
   },
   {
-    "prn": "SCLU325033",
-    "name": "Rajnandini Sapate",
-    "program": "B.Tech IT (Lateral Entry)",
+    "prn": "SCLU326003",
+    "name": "Upadhye Prasad Shankar",
+    "program": "B.Tech. IT-Lateral Entry",
     "group": "G4"
   },
   {
-    "prn": "SCLU325034",
-    "name": "AKASH NARENAVAR",
-    "program": "B.Tech IT (Lateral Entry)",
+    "prn": "SCLU326004",
+    "name": "Jadhav Pratik Pramod",
+    "program": "B.Tech. IT-Lateral Entry",
     "group": "G4"
   },
   {
-    "prn": "SCLU325035",
-    "name": "Sairaj Mane",
-    "program": "B.Tech IT (Lateral Entry)",
+    "prn": "SCLU326005",
+    "name": "Karampuri ranveer Dayanand",
+    "program": "B.Tech. IT-Lateral Entry",
     "group": "G4"
   },
   {
-    "prn": "SCLU325036",
-    "name": "Onkar Prashant khatake",
-    "program": "B.Tech IT (Lateral Entry)",
+    "prn": "SCLU326006",
+    "name": "Somvanshi Aniket Dashrath",
+    "program": "B.Tech. IT-Lateral Entry",
     "group": "G4"
   },
   {
-    "prn": "SCLU325037",
-    "name": "Nupur Salunke",
-    "program": "B.Tech IT (Lateral Entry)",
+    "prn": "SCLU326007",
+    "name": "Inde Samarth Santosh",
+    "program": "B.Tech. IT-Lateral Entry",
     "group": "G4"
   },
   {
-    "prn": "SCLU325038",
-    "name": "Venkatvinay Desaboyina",
-    "program": "B.Tech IT (Lateral Entry)",
+    "prn": "SCLU326008",
+    "name": "Sanade Prajwal Yallappa",
+    "program": "B.Tech. IT-Lateral Entry",
     "group": "G4"
   },
   {
-    "prn": "SCLU325039",
-    "name": "Ajinkya Supate",
-    "program": "B.Tech IT (Lateral Entry)",
+    "prn": "SCLU326009",
+    "name": "Bisoyi Aditya Krishnachandra",
+    "program": "B.Tech. IT-Lateral Entry",
     "group": "G4"
   },
   {
-    "prn": "SCLU325040",
-    "name": "Mrunalini Sandeep Bhadange",
-    "program": "B.Tech IT (Lateral Entry)",
+    "prn": "SCLU326010",
+    "name": "Hundekar Aditya Prakash",
+    "program": "B.Tech. IT-Lateral Entry",
     "group": "G4"
   },
   {
-    "prn": "SCLU325041",
-    "name": "Sanket Balasaheb Mengale",
-    "program": "B.Tech IT (Lateral Entry)",
+    "prn": "SCLU326011",
+    "name": "Dasari Tejas Manohar",
+    "program": "B.Tech. IT-Lateral Entry",
     "group": "G4"
   },
   {
-    "prn": "SCLU325042",
-    "name": "Onkar baliram Thite",
-    "program": "B.Tech IT (Lateral Entry)",
+    "prn": "SCLU326012",
+    "name": "Patil Abhishek Siddhaling",
+    "program": "B.Tech. IT-Lateral Entry",
     "group": "G4"
   },
   {
-    "prn": "SCLU325043",
-    "name": "Isha Mhamane",
-    "program": "B.Tech IT (Lateral Entry)",
+    "prn": "SCLU326013",
+    "name": "Khamkar Madhavi Santosh",
+    "program": "B.Tech. IT-Lateral Entry",
     "group": "G4"
   },
   {
-    "prn": "SCLU325044",
-    "name": "Rushiprasad Raju Chimman",
-    "program": "B.Tech IT (Lateral Entry)",
+    "prn": "SCLU326014",
+    "name": "Jamadar Mustafa Sabir Husain",
+    "program": "B.Tech. IT-Lateral Entry",
     "group": "G4"
   },
   {
-    "prn": "SCLU325046",
-    "name": "Abhishek Raut",
-    "program": "B.Tech IT (Lateral Entry)",
+    "prn": "SCLU326015",
+    "name": "Mandolikar Piyush Prakash",
+    "program": "B.Tech. IT-Lateral Entry",
     "group": "G4"
   },
   {
-    "prn": "SCLU325047",
-    "name": "Rohit Pramod Gore",
-    "program": "B.Tech IT (Lateral Entry)",
+    "prn": "SCLU326016",
+    "name": "Abdul Raheman Adbul Sattar Shaikh",
+    "program": "B.Tech. IT-Lateral Entry",
     "group": "G4"
   },
   {
-    "prn": "SCLU325048",
-    "name": "Samruddhi Vishwendra More",
-    "program": "B.Tech IT (Lateral Entry)",
+    "prn": "SCLU326017",
+    "name": "Tumma Gouriprasad Narendra",
+    "program": "B.Tech. IT-Lateral Entry",
     "group": "G4"
   },
   {
-    "prn": "SCFU425061",
-    "name": "Koli Snehal Ganesh",
-    "program": "B.Tech AIML",
+    "prn": "SCLU326018",
+    "name": "Kulkarni Siddhi Prasad",
+    "program": "B.Tech. IT-Lateral Entry",
     "group": "G4"
   },
   {
-    "prn": "SCFU425062",
-    "name": "Shinde Aditya Santosh",
-    "program": "B.Tech AIML",
+    "prn": "SCLU326019",
+    "name": "Kallurkar Yogiraj Mutturaj",
+    "program": "B.Tech. IT-Lateral Entry",
     "group": "G4"
   },
   {
-    "prn": "SCFU425038",
-    "name": "Navale Vedantraj Chandra",
-    "program": "B.Tech AIML",
+    "prn": "SCLU326020",
+    "name": "Kadam Sanchita Vyanktesh",
+    "program": "B.Tech. IT-Lateral Entry",
     "group": "G4"
   },
   {
-    "prn": "SCFU425041",
-    "name": "Balgaonkar Arjun Vilas",
-    "program": "B.Tech AIML",
+    "prn": "SCLU326021",
+    "name": "Mittha Prasad Niranjan",
+    "program": "B.Tech. IT-Lateral Entry",
     "group": "G4"
   },
   {
-    "prn": "SCFU425056",
-    "name": "Satkhed Rida Feroze",
-    "program": "B.Tech AIML",
+    "prn": "SCLU326022",
+    "name": "Yengul Shivanand Venugopal",
+    "program": "B.Tech. IT-Lateral Entry",
     "group": "G4"
   },
   {
-    "prn": "SCFU425024",
-    "name": "Anand Nagesh Salunke",
-    "program": "B.Tech AIML",
+    "prn": "SCLU326023",
+    "name": "Nikam hrishikesh Hanmant",
+    "program": "B.Tech. IT-Lateral Entry",
     "group": "G4"
   },
   {
-    "prn": "SCFU425001",
-    "name": "Subham Dey",
-    "program": "B.Tech AIML",
+    "prn": "SCLU326024",
+    "name": "Nadargi Arjun Ganesh",
+    "program": "B.Tech. IT-Lateral Entry",
     "group": "G4"
   },
   {
-    "prn": "SCFU425066",
-    "name": "Balingal Lochana Mallikar",
-    "program": "B.Tech AIML",
+    "prn": "SCLU326025",
+    "name": "Kassa Darshan Raju",
+    "program": "B.Tech. IT-Lateral Entry",
     "group": "G4"
   },
   {
-    "prn": "SCFU425035",
-    "name": "Bhadule Sudarshan Sadanan",
-    "program": "B.Tech AIML",
+    "prn": "SCLU326026",
+    "name": "Chavan Mahesh Mohanchand",
+    "program": "B.Tech. IT-Lateral Entry",
     "group": "G4"
   },
   {
-    "prn": "SCFU425044",
-    "name": "Priti Gundu Dalavi",
-    "program": "B.Tech AIML",
+    "prn": "SCLU326027",
+    "name": "Samal Naveen Narendra",
+    "program": "B.Tech. IT-Lateral Entry",
     "group": "G4"
   },
   {
-    "prn": "SCFU425046",
-    "name": "Gade Piyush Ketan",
-    "program": "B.Tech AIML",
+    "prn": "SCLU326028",
+    "name": "Shabdi Awais Imtiyaz",
+    "program": "B.Tech. IT-Lateral Entry",
     "group": "G4"
   },
   {
-    "prn": "SCFU425047",
-    "name": "Khule Aditi Yuvraj",
-    "program": "B.Tech AIML",
+    "prn": "SCLU326029",
+    "name": "Bhenki Aakanksha Babasaheb",
+    "program": "B.Tech. IT-Lateral Entry",
     "group": "G4"
   },
   {
-    "prn": "SCFU425005",
-    "name": "Bhinge Onkar Pandurang",
-    "program": "B.Tech AIML",
+    "prn": "SCLU326030",
+    "name": "Ingale Kaushikkumar Sunilkumar",
+    "program": "B.Tech. IT-Lateral Entry",
     "group": "G4"
   },
   {
-    "prn": "SCFU425034",
-    "name": "Jadhav Aaryal Chandrakant",
-    "program": "B.Tech AIML",
+    "prn": "SCLU326031",
+    "name": "Gidde Prathmesh Pradip",
+    "program": "B.Tech. IT-Lateral Entry",
     "group": "G4"
   },
   {
-    "prn": "SCFU425065",
-    "name": "Onkar Masaji Patil",
-    "program": "B.Tech AIML",
+    "prn": "SCLU326032",
+    "name": "Lad Janhavi Sachin",
+    "program": "B.Tech. IT-Lateral Entry",
     "group": "G4"
   },
   {
-    "prn": "SCFU425039",
-    "name": "Akude Raj Narasinha",
-    "program": "B.Tech AIML",
-    "group": "G4"
-  },
-  {
-    "prn": "SCFU425028",
-    "name": "Sudarshan Kanip Dade",
-    "program": "B.Tech AIML",
-    "group": "G4"
-  },
-  {
-    "prn": "SCFU425049",
-    "name": "Chityal Sagar Suryakant",
-    "program": "B.Tech AIML",
-    "group": "G4"
-  },
-  {
-    "prn": "SCFU425063",
-    "name": "Gajjam Pushkar Jayant",
-    "program": "B.Tech AIML",
-    "group": "G4"
-  },
-  {
-    "prn": "SCFU425054",
-    "name": "Terdal Shambhavi Sadashiv",
-    "program": "B.Tech AIML",
-    "group": "G4"
-  },
-  {
-    "prn": "SCFU425058",
-    "name": "Dange Rafa Mudassar",
-    "program": "B.Tech AIML",
-    "group": "G4"
-  },
-  {
-    "prn": "SCFU425020",
-    "name": "Subhedar Gafur Abdul",
-    "program": "B.Tech AIML",
-    "group": "G4"
-  },
-  {
-    "prn": "SCFU425027",
-    "name": "Mujawar Karim Javid",
-    "program": "B.Tech AIML",
+    "prn": "SCFP126036",
+    "name": "Gavali Pratiksha Bharat",
+    "program": "MCA",
     "group": "G5"
   },
   {
-    "prn": "SCFU425040",
-    "name": "Menthe Sharanraj Shivrudr",
-    "program": "B.Tech AIML",
+    "prn": "SCFP126037",
+    "name": "Tamboli Saniya Ismail",
+    "program": "MCA",
     "group": "G5"
   },
   {
-    "prn": "SCFU425002",
-    "name": "Shaikh Alina Altaf",
-    "program": "B.Tech AIML",
+    "prn": "SCFP126038",
+    "name": "Vadaje Harshraj Rahul",
+    "program": "MCA",
     "group": "G5"
   },
   {
-    "prn": "SCFU225001",
-    "name": "Shahid Mujawar",
+    "prn": "SCFP126039",
+    "name": "Kota Mallesham Rajesham",
+    "program": "MCA",
+    "group": "G5"
+  },
+  {
+    "prn": "SCFP126040",
+    "name": "Tamboli Sumera Rajasaheb",
+    "program": "MCA",
+    "group": "G5"
+  },
+  {
+    "prn": "SCFP126041",
+    "name": "Sathe Virag Amar",
+    "program": "MCA",
+    "group": "G5"
+  },
+  {
+    "prn": "SCFP126042",
+    "name": "Yadav Priya Santosh",
+    "program": "MCA",
+    "group": "G5"
+  },
+  {
+    "prn": "SCFP126043",
+    "name": "Mariya Riyaz Ahmed Lokapalli",
+    "program": "MCA",
+    "group": "G5"
+  },
+  {
+    "prn": "SCFP126044",
+    "name": "Kaif Ismail Kalyani",
+    "program": "MCA",
+    "group": "G5"
+  },
+  {
+    "prn": "SCFP126045",
+    "name": "Firdous Md.Saleem Shaikh",
+    "program": "MCA",
+    "group": "G5"
+  },
+  {
+    "prn": "SCFP126046",
+    "name": "Vhasure Sakshi Ratnkant",
+    "program": "MCA",
+    "group": "G5"
+  },
+  {
+    "prn": "SCFP126047",
+    "name": "Tangsal Mariya Ashfaque",
+    "program": "MCA",
+    "group": "G5"
+  },
+  {
+    "prn": "SCFP126048",
+    "name": "Mamdyal Vaishnavi Ashwin",
+    "program": "MCA",
+    "group": "G5"
+  },
+  {
+    "prn": "SCFP126049",
+    "name": "Tiwari Subhi Bal Krishna",
+    "program": "MCA",
+    "group": "G5"
+  },
+  {
+    "prn": "SCFP126050",
+    "name": "Lavate Sneha Devendra",
+    "program": "MCA",
+    "group": "G5"
+  },
+  {
+    "prn": "SCFP126051",
+    "name": "Kumar Kalash Santosh",
+    "program": "MCA",
+    "group": "G5"
+  },
+  {
+    "prn": "SCFP126052",
+    "name": "Sarvade Atharv Manoj",
+    "program": "MCA",
+    "group": "G5"
+  },
+  {
+    "prn": "SCFP126053",
+    "name": "Jadhav Ajit Yamnurappa",
+    "program": "MCA",
+    "group": "G5"
+  },
+  {
+    "prn": "SCFP126054",
+    "name": "Gavandi Darshan Basavraj",
+    "program": "MCA",
+    "group": "G5"
+  },
+  {
+    "prn": "SCFP126055",
+    "name": "Mhnatati Bablu Ramesh",
+    "program": "MCA",
+    "group": "G5"
+  },
+  {
+    "prn": "SCFP126056",
+    "name": "Matthe Nilesh Ratan",
+    "program": "MCA",
+    "group": "G5"
+  },
+  {
+    "prn": "SCFP126057",
+    "name": "Samal Govardhan Dashrath",
+    "program": "MCA",
+    "group": "G5"
+  },
+  {
+    "prn": "SCFU126033",
+    "name": "Sahoo Pushpdeep Sanjaykumar",
+    "program": "B.Tech. CSE",
+    "group": "G5"
+  },
+  {
+    "prn": "SCFU126034",
+    "name": "Gurav Samarth Shivaji",
+    "program": "B.Tech. CSE",
+    "group": "G5"
+  },
+  {
+    "prn": "SCFU126035",
+    "name": "Chavan Sakshi Sharad",
+    "program": "B.Tech. CSE",
+    "group": "G5"
+  },
+  {
+    "prn": "SCFU126036",
+    "name": "Shirgure Sangmesh Umakant",
+    "program": "B.Tech. CSE",
+    "group": "G5"
+  },
+  {
+    "prn": "SCFU126037",
+    "name": "Wale Shravani Siddharam",
+    "program": "B.Tech. CSE",
+    "group": "G5"
+  },
+  {
+    "prn": "SCFU126038",
+    "name": "Mhetre Prakruti Prabhudas",
+    "program": "B.Tech. CSE",
+    "group": "G5"
+  },
+  {
+    "prn": "SCLU326033",
+    "name": "Hibare Shubham Ranjit",
+    "program": "B.Tech. IT-Lateral Entry",
+    "group": "G5"
+  },
+  {
+    "prn": "SCLU326034",
+    "name": "Kulkarni Sanika Abhay",
+    "program": "B.Tech. IT-Lateral Entry",
+    "group": "G5"
+  },
+  {
+    "prn": "SCLU326035",
+    "name": "Jakkal Aryan Anand",
+    "program": "B.Tech. IT-Lateral Entry",
+    "group": "G5"
+  },
+  {
+    "prn": "SCLU326036",
+    "name": "Deokar Aadesh Vishwasrao",
+    "program": "B.Tech. IT-Lateral Entry",
+    "group": "G5"
+  },
+  {
+    "prn": "SCLU326037",
+    "name": "Banajgolkar Ritesh Nilappa",
+    "program": "B.Tech. IT-Lateral Entry",
+    "group": "G5"
+  },
+  {
+    "prn": "SCLU326038",
+    "name": "Jamma Atharva Kuber",
+    "program": "B.Tech. IT-Lateral Entry",
+    "group": "G5"
+  },
+  {
+    "prn": "SCLU326039",
+    "name": "Hukkeri Nikhil Nagnath",
+    "program": "B.Tech. IT-Lateral Entry",
+    "group": "G5"
+  },
+  {
+    "prn": "BSFU126001",
+    "name": "Mashale Vaibhav Ramchandra",
+    "program": "BBA",
+    "group": "G6"
+  },
+  {
+    "prn": "BSFU126002",
+    "name": "Choudhary Suraj Sakharam",
+    "program": "BBA",
+    "group": "G6"
+  },
+  {
+    "prn": "BSFU126003",
+    "name": "Diddi Shruti Nitin",
+    "program": "BBA",
+    "group": "G6"
+  },
+  {
+    "prn": "BSFU126004",
+    "name": "Phatate Jaywardhan Surendra",
+    "program": "BBA",
+    "group": "G6"
+  },
+  {
+    "prn": "BSFU126005",
+    "name": "Mhetre Samarth Vijay",
+    "program": "BBA",
+    "group": "G6"
+  },
+  {
+    "prn": "BSFU126006",
+    "name": "Jagtap Pruthviraj Chandrakant",
+    "program": "BBA",
+    "group": "G6"
+  },
+  {
+    "prn": "BSFU126007",
+    "name": "Bhaikatti Om Amit",
+    "program": "BBA",
+    "group": "G6"
+  },
+  {
+    "prn": "BSFU126008",
+    "name": "Bhosale Shital Vitthal",
+    "program": "BBA",
+    "group": "G6"
+  },
+  {
+    "prn": "BSFU126009",
+    "name": "Chakurkar Chetan Vishal",
+    "program": "BBA",
+    "group": "G6"
+  },
+  {
+    "prn": "BSFU126010",
+    "name": "Degaonkar Aarya Amar",
+    "program": "BBA",
+    "group": "G6"
+  },
+  {
+    "prn": "BSFU126011",
+    "name": "Bhosale Onkar Jagannath",
+    "program": "BBA",
+    "group": "G6"
+  },
+  {
+    "prn": "BSFU126012",
+    "name": "Gidde Shreyash Pradip",
+    "program": "BBA",
+    "group": "G6"
+  },
+  {
+    "prn": "BSFU126013",
+    "name": "Mahindrakar Sushmitha Manohar",
+    "program": "BBA",
+    "group": "G6"
+  },
+  {
+    "prn": "BSFU126014",
+    "name": "Rajput Sanchita Rishikaish",
+    "program": "BBA",
+    "group": "G6"
+  },
+  {
+    "prn": "BSFU126015",
+    "name": "Khade Samyak Anil",
+    "program": "BBA",
+    "group": "G6"
+  },
+  {
+    "prn": "BSFU126016",
+    "name": "Raut Aonkar Anil",
+    "program": "BBA",
+    "group": "G6"
+  },
+  {
+    "prn": "BSFU126017",
+    "name": "Mogili Ram Charan Teja",
+    "program": "BBA",
+    "group": "G6"
+  },
+  {
+    "prn": "BSFU126018",
+    "name": "Virpe Shivam Rajesh",
+    "program": "BBA",
+    "group": "G6"
+  },
+  {
+    "prn": "BSFU126019",
+    "name": "Chougule Siddhi Amar",
+    "program": "BBA",
+    "group": "G6"
+  },
+  {
+    "prn": "BSFU126020",
+    "name": "Dhumal Sarthak Atul",
+    "program": "BBA",
+    "group": "G6"
+  },
+  {
+    "prn": "BSFU126021",
+    "name": "Manya Kumari",
+    "program": "BBA",
+    "group": "G6"
+  },
+  {
+    "prn": "BSFU126022",
+    "name": "Khandare Tanish Mahadev",
+    "program": "BBA",
+    "group": "G6"
+  },
+  {
+    "prn": "BSFU126023",
+    "name": "Patel Ganesh Mahesh",
+    "program": "BBA",
+    "group": "G6"
+  },
+  {
+    "prn": "BSFU126024",
+    "name": "Shinde Dadaso Chandrakant",
+    "program": "BBA",
+    "group": "G6"
+  },
+  {
+    "prn": "BSFU126025",
+    "name": "Jalanapure Kanhaiyya Mahadev",
+    "program": "BBA",
+    "group": "G6"
+  },
+  {
+    "prn": "BSFU126026",
+    "name": "Bhonge Shreya Kishor",
+    "program": "BBA",
+    "group": "G6"
+  },
+  {
+    "prn": "BSFU126027",
+    "name": "Deshmane Sairaj Mahesh",
+    "program": "BBA",
+    "group": "G6"
+  },
+  {
+    "prn": "BSFU126028",
+    "name": "Yadav Samarth Mahesh",
+    "program": "BBA",
+    "group": "G6"
+  },
+  {
+    "prn": "BSFU126029",
+    "name": "Kongari Lahari Ramswami",
+    "program": "BBA",
+    "group": "G6"
+  },
+  {
+    "prn": "BSFU126030",
+    "name": "Andol Omkar Sainath",
+    "program": "BBA",
+    "group": "G6"
+  },
+  {
+    "prn": "BSFU126031",
+    "name": "Marod Komal Anandsing",
+    "program": "BBA",
+    "group": "G6"
+  },
+  {
+    "prn": "BSFU126032",
+    "name": "Kattimani Prabhat Deepak",
+    "program": "BBA",
+    "group": "G6"
+  },
+  {
+    "prn": "BSFU126033",
+    "name": "Khatavkar Rudraksh Ganesh",
+    "program": "BBA",
+    "group": "G7"
+  },
+  {
+    "prn": "BSFU126034",
+    "name": "Pawar Adarsh Kisan",
+    "program": "BBA",
+    "group": "G7"
+  },
+  {
+    "prn": "BSFU126035",
+    "name": "Andhalkar Vedant Nitin",
+    "program": "BBA",
+    "group": "G7"
+  },
+  {
+    "prn": "BSFU126036",
+    "name": "Mane Pritam Dattatray",
+    "program": "BBA",
+    "group": "G7"
+  },
+  {
+    "prn": "BSFU126037",
+    "name": "Shipuje Snehal Shashikant",
+    "program": "BBA",
+    "group": "G7"
+  },
+  {
+    "prn": "BSFU126038",
+    "name": "Dabi Pratham Sonu",
+    "program": "BBA",
+    "group": "G7"
+  },
+  {
+    "prn": "BSFU126039",
+    "name": "Karande Sanjivani Laxman",
+    "program": "BBA",
+    "group": "G7"
+  },
+  {
+    "prn": "BSFU126040",
+    "name": "Chavan Sumit Bharat",
+    "program": "BBA",
+    "group": "G7"
+  },
+  {
+    "prn": "BSFU126041",
+    "name": "Ghogare Sandesh Nitin",
+    "program": "BBA",
+    "group": "G7"
+  },
+  {
+    "prn": "BSFU126042",
+    "name": "Salvi John Shalem",
+    "program": "BBA",
+    "group": "G7"
+  },
+  {
+    "prn": "BSFU126043",
+    "name": "Khan Rehnuma Asgar",
+    "program": "BBA",
+    "group": "G7"
+  },
+  {
+    "prn": "BSFU126044",
+    "name": "Parve Vaishnavi Kiran",
+    "program": "BBA",
+    "group": "G7"
+  },
+  {
+    "prn": "BSFU126045",
+    "name": "Shirasi Anishka Rekha",
+    "program": "BBA",
+    "group": "G7"
+  },
+  {
+    "prn": "SELU126001",
+    "name": "Salgar Kshiteej Raghvendra",
+    "program": "B.Tech. ECE-Lateral Entry",
+    "group": "G7"
+  },
+  {
+    "prn": "SELU126002",
+    "name": "Swami Onkar Lingayya",
+    "program": "B.Tech. ECE-Lateral Entry",
+    "group": "G7"
+  },
+  {
+    "prn": "SCFU226001",
+    "name": "Deo Tejal Mukund",
     "program": "BCA",
-    "group": "G5"
+    "group": "G7"
   },
   {
-    "prn": "SCFU225002",
-    "name": "Pavitra Gore",
+    "prn": "SCFU226002",
+    "name": "Peerzade Aasim Abdurrazak",
     "program": "BCA",
-    "group": "G5"
+    "group": "G7"
   },
   {
-    "prn": "SCFU225003",
-    "name": "Maher Shaikh",
+    "prn": "SCFU226003",
+    "name": "Bhandari Rajswapnil Mallikarjun",
     "program": "BCA",
-    "group": "G5"
+    "group": "G7"
   },
   {
-    "prn": "SCFU225004",
-    "name": "Henal Patel",
+    "prn": "SCFU226004",
+    "name": "Mungapatil Aditya Amar",
     "program": "BCA",
-    "group": "G5"
+    "group": "G7"
   },
   {
-    "prn": "SCFU225005",
-    "name": "Omkar Devidas Gaikwad",
+    "prn": "SCFU226005",
+    "name": "Bhosale Yogiraj Shahaji",
     "program": "BCA",
-    "group": "G5"
+    "group": "G7"
   },
   {
-    "prn": "SCFU225006",
-    "name": "Hitesh Vijay Kukreja",
+    "prn": "SCFU226006",
+    "name": "Surve Aniket Lahu",
     "program": "BCA",
-    "group": "G5"
+    "group": "G7"
   },
   {
-    "prn": "SCFU225007",
-    "name": "Prakash Ganesh Udhanshetti",
+    "prn": "SCFU226007",
+    "name": "Rodage Basavraj Shantesh",
     "program": "BCA",
-    "group": "G5"
+    "group": "G7"
   },
   {
-    "prn": "SCFU225009",
-    "name": "Santosh Rajendra Shirkul",
+    "prn": "SCFU226008",
+    "name": "Gund Samarth Manoj",
     "program": "BCA",
-    "group": "G5"
+    "group": "G7"
   },
   {
-    "prn": "SCFU225010",
-    "name": "Aditya Namdeo Aldar",
+    "prn": "SCFU226009",
+    "name": "Dustakar Tanishka Santosh",
     "program": "BCA",
-    "group": "G5"
+    "group": "G7"
   },
   {
-    "prn": "SCFU225011",
-    "name": "Shrikrushna Satav",
+    "prn": "SCFU226010",
+    "name": "Patil Vishakha Mallinath",
     "program": "BCA",
-    "group": "G5"
+    "group": "G7"
   },
   {
-    "prn": "SCFU225012",
-    "name": "Akash Basavaraj Godale",
-    "program": "BCA",
-    "group": "G5"
+    "prn": "BSFP126001",
+    "name": "Chakote Rasika Rajendra",
+    "program": "MBA",
+    "group": "G7"
   },
   {
-    "prn": "SCFU225013",
-    "name": "Prachi sominath Rathod",
-    "program": "BCA",
-    "group": "G5"
+    "prn": "BSFP126002",
+    "name": "Bhansali Shruti Abhay",
+    "program": "MBA",
+    "group": "G7"
   },
   {
-    "prn": "SCFU225014",
-    "name": "Sneha Houshetti",
-    "program": "BCA",
-    "group": "G5"
+    "prn": "BSFP126003",
+    "name": "Pujari Manjula Mallappa",
+    "program": "MBA",
+    "group": "G7"
   },
   {
-    "prn": "SCFU225015",
-    "name": "Tahniyat Shaikh",
-    "program": "BCA",
-    "group": "G5"
+    "prn": "BSFP126004",
+    "name": "Surana Sakshi Shantilal",
+    "program": "MBA",
+    "group": "G7"
   },
   {
-    "prn": "SCFU225016",
-    "name": "Anfus Shamsi",
-    "program": "BCA",
-    "group": "G5"
+    "prn": "BSFP126005",
+    "name": "Ambare Sampada Shrishail",
+    "program": "MBA",
+    "group": "G7"
   },
   {
-    "prn": "SCFU225017",
-    "name": "Abubakr Zamindar",
-    "program": "BCA",
-    "group": "G5"
+    "prn": "BSFP126006",
+    "name": "Maykal Shrirnag Vishnu",
+    "program": "MBA",
+    "group": "G7"
   },
   {
-    "prn": "SCFU225018",
-    "name": "Maroti Hajgule",
-    "program": "BCA",
-    "group": "G5"
+    "prn": "BSFP126007",
+    "name": "Deshmukh Digvijay Vinayakrao",
+    "program": "MBA",
+    "group": "G7"
   },
   {
-    "prn": "SCFU225019",
-    "name": "Nikhil Nitin Kurle",
-    "program": "BCA",
-    "group": "G5"
+    "prn": "BSFP126008",
+    "name": "Reddy Vasihnavi Vinay",
+    "program": "MBA",
+    "group": "G7"
   },
   {
-    "prn": "SCFU225020",
-    "name": "Kadir Sagari",
-    "program": "BCA",
-    "group": "G5"
+    "prn": "BSFP126009",
+    "name": "Bhosale Shruti Rajkumar",
+    "program": "MBA",
+    "group": "G7"
   },
   {
-    "prn": "SCFU225021",
-    "name": "Rehan Mulani",
-    "program": "BCA",
-    "group": "G5"
+    "prn": "BSFP226001",
+    "name": "Mengane Srushti Sunil",
+    "program": "MBA Pharma",
+    "group": "G8"
   },
   {
-    "prn": "SCFU225022",
-    "name": "Manjiri Shinde",
-    "program": "BCA",
-    "group": "G5"
+    "prn": "BSFP226002",
+    "name": "Patu Shashank Satish",
+    "program": "MBA Pharma",
+    "group": "G8"
   },
   {
-    "prn": "SCFU225023",
-    "name": "Mukund Mundada",
-    "program": "BCA",
-    "group": "G5"
+    "prn": "BSFP226003",
+    "name": "Puranik Vinod Irabasappa",
+    "program": "MBA Pharma",
+    "group": "G8"
   },
   {
-    "prn": "SCFU225024",
-    "name": "Hiresh Chandrakant Jawanjal",
-    "program": "BCA",
-    "group": "G5"
+    "prn": "BSFP226004",
+    "name": "Jeure Paurnima Chandrashekar",
+    "program": "MBA Pharma",
+    "group": "G8"
   },
   {
-    "prn": "SCFU225025",
-    "name": "Yuvraj Doddale",
-    "program": "BCA",
-    "group": "G5"
+    "prn": "BSFP226005",
+    "name": "Takalikar Atharva Dharmraj",
+    "program": "MBA Pharma",
+    "group": "G8"
   },
   {
-    "prn": "SCFU225026",
-    "name": "Sahil bapu shaikh",
-    "program": "BCA",
-    "group": "G5"
+    "prn": "BSFP226006",
+    "name": "Potdar Shruti Mallikarujun",
+    "program": "MBA Pharma",
+    "group": "G8"
   },
   {
-    "prn": "SCFP125001",
-    "name": "Arfaat Patel",
-    "program": "MCA",
-    "group": "G5"
+    "prn": "BSFP226007",
+    "name": "Tiwadi Purva Kamalkishor",
+    "program": "MBA Pharma",
+    "group": "G8"
   },
   {
-    "prn": "SCFP125004",
-    "name": "Prajakta Ghorpade",
-    "program": "MCA",
-    "group": "G5"
+    "prn": "BSFP226008",
+    "name": "Thalange Dhansashree Vishal",
+    "program": "MBA Pharma",
+    "group": "G8"
   },
   {
-    "prn": "SCFP125007",
-    "name": "Yusuf Shaikh",
-    "program": "MCA",
-    "group": "G5"
+    "prn": "BSFP226009",
+    "name": "Sonavane Sharayu Dilip",
+    "program": "MBA Pharma",
+    "group": "G8"
   },
   {
-    "prn": "SCFP125008",
-    "name": "Onkar Jituri",
-    "program": "MCA",
-    "group": "G5"
+    "prn": "BSFP226010",
+    "name": "Kothari Om Rahul",
+    "program": "MBA Pharma",
+    "group": "G8"
   },
   {
-    "prn": "SCFP125010",
-    "name": "Priyanka Adheli",
-    "program": "MCA",
-    "group": "G5"
+    "prn": "BSFU226001",
+    "name": "Bankapur Krutika Dinesh",
+    "program": "B.Com.",
+    "group": "G8"
   },
   {
-    "prn": "SCFP125011",
-    "name": "Sairaj Anvekar",
-    "program": "MCA",
-    "group": "G5"
+    "prn": "BSFU226002",
+    "name": "Aadhya Sathish",
+    "program": "B.Com.",
+    "group": "G8"
   },
   {
-    "prn": "SCFP125012",
-    "name": "Tushar Dugane",
-    "program": "MCA",
-    "group": "G5"
+    "prn": "SDFU126001",
+    "name": "Ranade Anvi Bhushan",
+    "program": "B.Des.",
+    "group": "G8"
   },
   {
-    "prn": "SCFP125013",
-    "name": "Suraj Pujari",
-    "program": "MCA",
-    "group": "G5"
+    "prn": "SDFU126002",
+    "name": "Zaveriya Sameer Kudle",
+    "program": "B.Des.",
+    "group": "G8"
   },
   {
-    "prn": "SCFP125014",
-    "name": "Jatin Kolhapure",
-    "program": "MCA",
-    "group": "G5"
+    "prn": "SDFU126003",
+    "name": "Deshpande Nidhi Atul",
+    "program": "B.Des.",
+    "group": "G8"
   },
   {
-    "prn": "SCFP125015",
-    "name": "Samarth Kapase",
-    "program": "MCA",
-    "group": "G5"
+    "prn": "SDFU226001",
+    "name": "Pawar Suchita Suresh",
+    "program": "B.Sc. Textile",
+    "group": "G8"
   },
   {
-    "prn": "SCFP125016",
-    "name": "Mayuri Mengji",
-    "program": "MCA",
-    "group": "G5"
+    "prn": "SDFU226002",
+    "name": "Aazam Mohamad Ismail Shaikh",
+    "program": "B.Sc. Textile",
+    "group": "G8"
   },
   {
-    "prn": "SCFP125017",
-    "name": "Pranali Koli",
-    "program": "MCA",
-    "group": "G5"
+    "prn": "SDFU326001",
+    "name": "Ghadge Atharva Deepak",
+    "program": "B.SC Animation & VFX",
+    "group": "G8"
   },
   {
-    "prn": "SCFP125018",
-    "name": "Mohamad Shaikh",
-    "program": "MCA",
-    "group": "G5"
+    "prn": "SDFU326002",
+    "name": "Gurav Ayush Amar",
+    "program": "B.SC Animation & VFX",
+    "group": "G8"
   },
   {
-    "prn": "SCFP125019",
-    "name": "Ganesh Sagar",
-    "program": "MCA",
-    "group": "G5"
+    "prn": "SDFU326003",
+    "name": "Deshmukh Satyjeet Sanjay",
+    "program": "B.SC Animation & VFX",
+    "group": "G8"
   },
   {
-    "prn": "SCFP125020",
-    "name": "Aniket Gaikwad",
-    "program": "MCA",
-    "group": "G5"
+    "prn": "SDFU326004",
+    "name": "Havin Vishwanath Rudrappa",
+    "program": "B.SC Animation & VFX",
+    "group": "G8"
   },
   {
-    "prn": "SCFP125021",
-    "name": "Sufiyan Shaikh",
-    "program": "MCA",
-    "group": "G5"
+    "prn": "SDFU326005",
+    "name": "Gadgimath Vinayak Ravikanth",
+    "program": "B.SC Animation & VFX",
+    "group": "G8"
   },
   {
-    "prn": "SCFP125022",
-    "name": "Saniya Shaikh",
-    "program": "MCA",
-    "group": "G5"
+    "prn": "SDFU326006",
+    "name": "Trivedi Vishruti Chaitanyabhai",
+    "program": "B.SC Animation & VFX",
+    "group": "G8"
   },
   {
-    "prn": "SCFP125023",
-    "name": "Trupti Gangavati",
-    "program": "MCA",
-    "group": "G5"
+    "prn": "SDFU326007",
+    "name": "Shaikh Ayan Mohiddin",
+    "program": "B.SC Animation & VFX",
+    "group": "G8"
   },
   {
-    "prn": "SCFP125024",
-    "name": "Shubranil Pandit",
-    "program": "MCA",
-    "group": "G5"
+    "prn": "SDFU326008",
+    "name": "Ghongade Varadraje Kishor",
+    "program": "B.SC Animation & VFX",
+    "group": "G8"
   },
   {
-    "prn": "SCFP125025",
-    "name": "Laxmikant Patane",
-    "program": "MCA",
-    "group": "G5"
+    "prn": "SPFU126001",
+    "name": "Birajdar Prathmesh Shrishail",
+    "program": "B.Pharm",
+    "group": "G8"
   },
   {
-    "prn": "SCFP125026",
-    "name": "Rohan Lokhande",
-    "program": "MCA",
-    "group": "G5"
+    "prn": "SPFU126002",
+    "name": "Kambale Adwaita Sangram",
+    "program": "B.Pharm",
+    "group": "G8"
   },
   {
-    "prn": "SCFP125028",
-    "name": "Arshiya Tamboli",
-    "program": "MCA",
-    "group": "G5"
-  },
-  {
-    "prn": "SCFP125029",
-    "name": "Ajay Yangal",
-    "program": "MCA",
-    "group": "G5"
-  },
-  {
-    "prn": "SCFP125030",
-    "name": "Viraj Kandikatla",
-    "program": "MCA",
-    "group": "G5"
-  },
-  {
-    "prn": "SCFP125031",
-    "name": "Shrihari Gajul",
-    "program": "MCA",
-    "group": "G5"
-  },
-  {
-    "prn": "SCFP125032",
-    "name": "Iram Patel",
-    "program": "MCA",
-    "group": "G5"
-  },
-  {
-    "prn": "SCFP125033",
-    "name": "Swami Sakshi Balayya",
-    "program": "MCA",
-    "group": "G5"
-  },
-  {
-    "prn": "SCFP125034",
-    "name": "Musa Shaikh",
-    "program": "MCA",
-    "group": "G5"
-  },
-  {
-    "prn": "SCFP125035",
-    "name": "Tanmay Thorat",
-    "program": "MCA",
-    "group": "G5"
-  },
-  {
-    "prn": "SCFP125036",
-    "name": "Rajnandini Dhongade",
-    "program": "MCA",
-    "group": "G5"
-  },
-  {
-    "prn": "SCFP125037",
-    "name": "Anzalna Bidri",
-    "program": "MCA",
-    "group": "G5"
-  },
-  {
-    "prn": "SCFP125038",
-    "name": "Chaitanya Jadhav",
-    "program": "MCA",
-    "group": "G5"
-  },
-  {
-    "prn": "SCFP125039",
-    "name": "Sujal Nalawade",
-    "program": "MCA",
-    "group": "G5"
+    "prn": "SPFU126003",
+    "name": "Yerwa Shrutika Avinash",
+    "program": "B.Pharm",
+    "group": "G8"
   }
 ];
 
