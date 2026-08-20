@@ -260,7 +260,7 @@
 
     var prnMatch = findByPrn(query);
     if (prnMatch) {
-      hideSuggestions();
+      displayStudent(prnMatch);
       return;
     }
 
