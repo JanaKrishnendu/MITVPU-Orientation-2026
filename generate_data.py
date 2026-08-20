@@ -47,6 +47,15 @@ ROOM_BY_PROGRAM = {
 }
 
 AUDITORIUM = "Auditorium (6th Floor)"
+SEMINAR_HALL = "Seminar Hall (1st Floor)"
+
+# Parents-only sessions, run in parallel with the student track while
+# students are elsewhere (Cyber Security/Campus Tour, Parenting Gen-Z has
+# no student-side counterpart). Same for every program/group.
+PARENT_SESSIONS = [
+    {"time": "11:30 AM – 12:30 PM", "activity": "Cyber Security", "location": SEMINAR_HALL},
+    {"time": "3:00 PM – 4:00 PM", "activity": "Parenting Gen-Z", "location": SEMINAR_HALL},
+]
 
 # Student Induction Program 2026-27 master schedule. Groups G1-G4 and G5-G8
 # run the LinkedIn Workshop / Cyber Security / Citizenship & Responsibility /
@@ -134,6 +143,9 @@ def main():
         f.write(";\n\n")
         f.write("const ROOM_BY_PROGRAM = ")
         f.write(json.dumps(ROOM_BY_PROGRAM, ensure_ascii=False, indent=2))
+        f.write(";\n\n")
+        f.write("const PARENT_SESSIONS = ")
+        f.write(json.dumps(PARENT_SESSIONS, ensure_ascii=False, indent=2))
         f.write(";\n")
 
     print(f"Wrote {len(students)} students to {OUTPUT_JS}")

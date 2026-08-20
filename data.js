@@ -1976,3 +1976,16 @@ const ROOM_BY_PROGRAM = {
     "parent": "Room 515 (5th Floor)"
   }
 };
+
+const PARENT_SESSIONS = [
+  {
+    "time": "11:30 AM – 12:30 PM",
+    "activity": "Cyber Security",
+    "location": "Seminar Hall (1st Floor)"
+  },
+  {
+    "time": "3:00 PM – 4:00 PM",
+    "activity": "Parenting Gen-Z",
+    "location": "Seminar Hall (1st Floor)"
+  }
+];

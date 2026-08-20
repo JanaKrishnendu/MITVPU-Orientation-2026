@@ -18,6 +18,7 @@
     detailProgram: document.getElementById("detailProgram"),
     detailParentRoom: document.getElementById("detailParentRoom"),
     scheduleList: document.getElementById("scheduleList"),
+    parentScheduleList: document.getElementById("parentScheduleList"),
     welcomeText: document.getElementById("welcomeText"),
   };
 
@@ -145,6 +146,49 @@
     els.resultCard.hidden = true;
   }
 
+  function renderScheduleList(container, items, resolveLocation, emptyMessage) {
+    container.innerHTML = "";
+    if (items.length === 0) {
+      var emptyLi = document.createElement("li");
+      emptyLi.className = "schedule-item";
+      emptyLi.innerHTML =
+        '<div class="schedule-body"><span class="schedule-activity">' +
+        emptyMessage +
+        "</span></div>";
+      container.appendChild(emptyLi);
+      return;
+    }
+
+    items.forEach(function (item) {
+      var li = document.createElement("li");
+      li.className = "schedule-item";
+
+      var time = document.createElement("div");
+      time.className = "schedule-time";
+      time.textContent = item.time;
+
+      var body = document.createElement("div");
+      body.className = "schedule-body";
+
+      var activity = document.createElement("span");
+      activity.className = "schedule-activity";
+      activity.textContent = item.activity;
+      body.appendChild(activity);
+
+      var location = resolveLocation ? resolveLocation(item) : item.location;
+      if (location) {
+        var locationEl = document.createElement("span");
+        locationEl.className = "schedule-location";
+        locationEl.textContent = location;
+        body.appendChild(locationEl);
+      }
+
+      li.appendChild(time);
+      li.appendChild(body);
+      container.appendChild(li);
+    });
+  }
+
   function displayStudent(student) {
     hideMessage();
     hideSuggestions();
@@ -163,44 +207,21 @@
     els.detailParentRoom.textContent = (programRooms && programRooms.parent) || "Check Registration Desk";
 
     var schedule = GROUP_SCHEDULE[student.group] || [];
-    els.scheduleList.innerHTML = "";
-    if (schedule.length === 0) {
-      var li = document.createElement("li");
-      li.className = "schedule-item";
-      li.innerHTML = '<div class="schedule-body"><span class="schedule-activity">Schedule not available for your group yet.</span><span class="schedule-location">Please check with the Registration Desk.</span></div>';
-      els.scheduleList.appendChild(li);
-    } else {
-      schedule.forEach(function (item) {
-        var li = document.createElement("li");
-        li.className = "schedule-item";
+    renderScheduleList(
+      els.scheduleList,
+      schedule,
+      function (item) {
+        return item.useProgramRoom ? (programRooms && programRooms.student) || "Check Registration Desk" : item.location;
+      },
+      "Schedule not available for your group yet. Please check with the Registration Desk."
+    );
 
-        var time = document.createElement("div");
-        time.className = "schedule-time";
-        time.textContent = item.time;
-
-        var body = document.createElement("div");
-        body.className = "schedule-body";
-
-        var activity = document.createElement("span");
-        activity.className = "schedule-activity";
-        activity.textContent = item.activity;
-        body.appendChild(activity);
-
-        var location = item.useProgramRoom
-          ? (programRooms && programRooms.student) || "Check Registration Desk"
-          : item.location;
-        if (location) {
-          var locationEl = document.createElement("span");
-          locationEl.className = "schedule-location";
-          locationEl.textContent = location;
-          body.appendChild(locationEl);
-        }
-
-        li.appendChild(time);
-        li.appendChild(body);
-        els.scheduleList.appendChild(li);
-      });
-    }
+    renderScheduleList(
+      els.parentScheduleList,
+      typeof PARENT_SESSIONS === "object" ? PARENT_SESSIONS : [],
+      null,
+      "Parent session details will be announced at Registration."
+    );
 
     var institution = typeof INSTITUTION_NAME === "string" ? INSTITUTION_NAME : "our campus";
     els.welcomeText.textContent =
