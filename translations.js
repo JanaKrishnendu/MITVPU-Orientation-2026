@@ -136,12 +136,29 @@
     "Campus Tour": { mr: "कॅम्पस फेरफटका", hi: "कैंपस भ्रमण" },
     "Formal Function": { mr: "औपचारिक कार्यक्रम", hi: "औपचारिक कार्यक्रम" },
     "Cultural Program": { mr: "सांस्कृतिक कार्यक्रम", hi: "सांस्कृतिक कार्यक्रम" },
-    "Parenting Gen-Z": { mr: "Gen-Z चे पालकत्व", hi: "Gen-Z की परवरिश" }
+    "Parenting Gen-Z": { mr: "Gen-Z चे पालकत्व", hi: "Gen-Z की परवरिश" },
+    "Snacks": { mr: "अल्पोपाहार", hi: "जलपान" }
   };
 
   var LOCATION_TRANSLATIONS = {
     "Auditorium (6th Floor)": { mr: "सभागृह (6वा मजला)", hi: "सभागार (छठी मंजिल)" },
-    "Seminar Hall (1st Floor)": { mr: "सेमिनार हॉल (1ला मजला)", hi: "सेमिनार हॉल (पहली मंजिल)" }
+    "Seminar Hall (1st Floor)": { mr: "सेमिनार हॉल (1ला मजला)", hi: "सेमिनार हॉल (पहली मंजिल)" },
+    "University Main Building (Ground Floor) – Report to the venue 10 mins before.": {
+      mr: "विद्यापीठ मुख्य इमारत (तळमजला) – कार्यक्रमाच्या 10 मिनिटे आधी उपस्थित रहा.",
+      hi: "विश्वविद्यालय मुख्य भवन (भूतल) – कार्यक्रम स्थल पर 10 मिनट पहले पहुंचें."
+    },
+    "In front of University Main Building – Report to the venue 10 mins before.": {
+      mr: "विद्यापीठ मुख्य इमारतीसमोर – कार्यक्रमाच्या 10 मिनिटे आधी उपस्थित रहा.",
+      hi: "विश्वविद्यालय मुख्य भवन के सामने – कार्यक्रम स्थल पर 10 मिनट पहले पहुंचें."
+    },
+    "In front of University Main Building": {
+      mr: "विद्यापीठ मुख्य इमारतीसमोर",
+      hi: "विश्वविद्यालय मुख्य भवन के सामने"
+    },
+    "Tensile Structure (besides Canteen)": {
+      mr: "टेन्साइल स्ट्रक्चर (कॅन्टीनजवळ)",
+      hi: "टेंसाइल स्ट्रक्चर (कैंटीन के पास)"
+    }
   };
 
   var FLOOR_ORDINALS = {

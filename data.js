@@ -1688,12 +1688,17 @@ const GROUP_SCHEDULE = {
     {
       "time": "3:00 PM – 3:45 PM",
       "activity": "Campus Tour",
-      "location": "University Main Building (Ground Floor)"
+      "location": "University Main Building (Ground Floor) – Report to the venue 10 mins before."
+    },
+    {
+      "time": "3:45 PM – 4:15 PM",
+      "activity": "Snacks",
+      "location": "Tensile Structure (besides Canteen)"
     },
     {
       "time": "4:30 PM – 5:15 PM",
       "activity": "Formal Function",
-      "location": "In front of University Main Building"
+      "location": "In front of University Main Building – Report to the venue 10 mins before."
     },
     {
       "time": "5:30 PM – 6:15 PM",
@@ -1731,12 +1736,17 @@ const GROUP_SCHEDULE = {
     {
       "time": "3:00 PM – 3:45 PM",
       "activity": "Campus Tour",
-      "location": "University Main Building (Ground Floor)"
+      "location": "University Main Building (Ground Floor) – Report to the venue 10 mins before."
+    },
+    {
+      "time": "3:45 PM – 4:15 PM",
+      "activity": "Snacks",
+      "location": "Tensile Structure (besides Canteen)"
     },
     {
       "time": "4:30 PM – 5:15 PM",
       "activity": "Formal Function",
-      "location": "In front of University Main Building"
+      "location": "In front of University Main Building – Report to the venue 10 mins before."
     },
     {
       "time": "5:30 PM – 6:15 PM",
@@ -1774,12 +1784,17 @@ const GROUP_SCHEDULE = {
     {
       "time": "3:00 PM – 3:45 PM",
       "activity": "Campus Tour",
-      "location": "University Main Building (Ground Floor)"
+      "location": "University Main Building (Ground Floor) – Report to the venue 10 mins before."
+    },
+    {
+      "time": "3:45 PM – 4:15 PM",
+      "activity": "Snacks",
+      "location": "Tensile Structure (besides Canteen)"
     },
     {
       "time": "4:30 PM – 5:15 PM",
       "activity": "Formal Function",
-      "location": "In front of University Main Building"
+      "location": "In front of University Main Building – Report to the venue 10 mins before."
     },
     {
       "time": "5:30 PM – 6:15 PM",
@@ -1817,12 +1832,17 @@ const GROUP_SCHEDULE = {
     {
       "time": "3:00 PM – 3:45 PM",
       "activity": "Campus Tour",
-      "location": "University Main Building (Ground Floor)"
+      "location": "University Main Building (Ground Floor) – Report to the venue 10 mins before."
+    },
+    {
+      "time": "3:45 PM – 4:15 PM",
+      "activity": "Snacks",
+      "location": "Tensile Structure (besides Canteen)"
     },
     {
       "time": "4:30 PM – 5:15 PM",
       "activity": "Formal Function",
-      "location": "In front of University Main Building"
+      "location": "In front of University Main Building – Report to the venue 10 mins before."
     },
     {
       "time": "5:30 PM – 6:15 PM",
@@ -1845,7 +1865,7 @@ const GROUP_SCHEDULE = {
     {
       "time": "12:15 PM – 1:00 PM",
       "activity": "Campus Tour",
-      "location": "University Main Building (Ground Floor)"
+      "location": "University Main Building (Ground Floor) – Report to the venue 10 mins before."
     },
     {
       "time": "1:00 PM – 2:00 PM",
@@ -1863,9 +1883,14 @@ const GROUP_SCHEDULE = {
       "location": "Auditorium (6th Floor)"
     },
     {
+      "time": "3:45 PM – 4:15 PM",
+      "activity": "Snacks",
+      "location": "Tensile Structure (besides Canteen)"
+    },
+    {
       "time": "4:30 PM – 5:15 PM",
       "activity": "Formal Function",
-      "location": "In front of University Main Building"
+      "location": "In front of University Main Building – Report to the venue 10 mins before."
     },
     {
       "time": "5:30 PM – 6:15 PM",
@@ -1888,7 +1913,7 @@ const GROUP_SCHEDULE = {
     {
       "time": "12:15 PM – 1:00 PM",
       "activity": "Campus Tour",
-      "location": "University Main Building (Ground Floor)"
+      "location": "University Main Building (Ground Floor) – Report to the venue 10 mins before."
     },
     {
       "time": "1:00 PM – 2:00 PM",
@@ -1906,9 +1931,14 @@ const GROUP_SCHEDULE = {
       "location": "Auditorium (6th Floor)"
     },
     {
+      "time": "3:45 PM – 4:15 PM",
+      "activity": "Snacks",
+      "location": "Tensile Structure (besides Canteen)"
+    },
+    {
       "time": "4:30 PM – 5:15 PM",
       "activity": "Formal Function",
-      "location": "In front of University Main Building"
+      "location": "In front of University Main Building – Report to the venue 10 mins before."
     },
     {
       "time": "5:30 PM – 6:15 PM",
@@ -1931,7 +1961,7 @@ const GROUP_SCHEDULE = {
     {
       "time": "12:15 PM – 1:00 PM",
       "activity": "Campus Tour",
-      "location": "University Main Building (Ground Floor)"
+      "location": "University Main Building (Ground Floor) – Report to the venue 10 mins before."
     },
     {
       "time": "1:00 PM – 2:00 PM",
@@ -1949,9 +1979,14 @@ const GROUP_SCHEDULE = {
       "location": "Auditorium (6th Floor)"
     },
     {
+      "time": "3:45 PM – 4:15 PM",
+      "activity": "Snacks",
+      "location": "Tensile Structure (besides Canteen)"
+    },
+    {
       "time": "4:30 PM – 5:15 PM",
       "activity": "Formal Function",
-      "location": "In front of University Main Building"
+      "location": "In front of University Main Building – Report to the venue 10 mins before."
     },
     {
       "time": "5:30 PM – 6:15 PM",
@@ -1974,7 +2009,7 @@ const GROUP_SCHEDULE = {
     {
       "time": "12:15 PM – 1:00 PM",
       "activity": "Campus Tour",
-      "location": "University Main Building (Ground Floor)"
+      "location": "University Main Building (Ground Floor) – Report to the venue 10 mins before."
     },
     {
       "time": "1:00 PM – 2:00 PM",
@@ -1992,9 +2027,14 @@ const GROUP_SCHEDULE = {
       "location": "Auditorium (6th Floor)"
     },
     {
+      "time": "3:45 PM – 4:15 PM",
+      "activity": "Snacks",
+      "location": "Tensile Structure (besides Canteen)"
+    },
+    {
       "time": "4:30 PM – 5:15 PM",
       "activity": "Formal Function",
-      "location": "In front of University Main Building"
+      "location": "In front of University Main Building – Report to the venue 10 mins before."
     },
     {
       "time": "5:30 PM – 6:15 PM",
