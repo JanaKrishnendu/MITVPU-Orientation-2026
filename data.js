@@ -439,20 +439,20 @@ const STUDENTS = [
   },
   {
     "prn": "SEFU126010",
-    "name": "Bomane Suyash Shivling",
-    "program": "B.Tech. ECE",
-    "group": "G2"
-  },
-  {
-    "prn": "SEFU126011",
-    "name": "Kharade Sarthak Dasharath",
-    "program": "B.Tech. ECE",
-    "group": "G2"
-  },
-  {
-    "prn": "SEFU126012",
     "name": "Hulle Aadesh Abhay",
     "program": "B.Tech. ECE",
+    "group": "G2"
+  },
+  {
+    "prn": "SELU126003",
+    "name": "Kharade Sarthak Dasharath",
+    "program": "B.Tech. ECE-Lateral Entry",
+    "group": "G2"
+  },
+  {
+    "prn": "SELU126004",
+    "name": "Bomane Suyash Shivling",
+    "program": "B.Tech. ECE-Lateral Entry",
     "group": "G2"
   },
   {
@@ -690,6 +690,12 @@ const STUDENTS = [
     "group": "G3"
   },
   {
+    "prn": "SCFP126058",
+    "name": "Motgi Varad Vivek",
+    "program": "MCA",
+    "group": "G4"
+  },
+  {
     "prn": "SCLU326001",
     "name": "Mulla Aatif Nisarahmed",
     "program": "B.Tech. IT-Lateral Entry",
@@ -885,12 +891,6 @@ const STUDENTS = [
     "prn": "SCLU326040",
     "name": "Kassa Siddharth Omprakash",
     "program": "B.Tech. IT-Lateral Entry",
-    "group": "G4"
-  },
-  {
-    "prn": "SCFP126058",
-    "name": "Motgi Varad Vivek",
-    "program": "MCA",
     "group": "G4"
   },
   {
@@ -1332,16 +1332,88 @@ const STUDENTS = [
     "group": "G6"
   },
   {
+    "prn": "SEFU126011",
+    "name": "Nade Ashutosh Abhijit",
+    "program": "B.Tech. ECE",
+    "group": "G6"
+  },
+  {
     "prn": "SELU126005",
     "name": "Battul Shrutika Nardendra",
     "program": "B.Tech. ECE-Lateral Entry",
     "group": "G6"
   },
   {
-    "prn": "SEFU126011",
-    "name": "Nade Ashutosh Abhijit",
-    "program": "B.Tech. ECE",
-    "group": "G6"
+    "prn": "BSFP126001",
+    "name": "Chakote Rasika Rajendra",
+    "program": "MBA",
+    "group": "G7"
+  },
+  {
+    "prn": "BSFP126002",
+    "name": "Bhansali Shruti Abhay",
+    "program": "MBA",
+    "group": "G7"
+  },
+  {
+    "prn": "BSFP126003",
+    "name": "Pujari Manjula Mallappa",
+    "program": "MBA",
+    "group": "G7"
+  },
+  {
+    "prn": "BSFP126004",
+    "name": "Surana Sakshi Shantilal",
+    "program": "MBA",
+    "group": "G7"
+  },
+  {
+    "prn": "BSFP126005",
+    "name": "Ambare Sampada Shrishail",
+    "program": "MBA",
+    "group": "G7"
+  },
+  {
+    "prn": "BSFP126006",
+    "name": "Maykal Shrirnag Vishnu",
+    "program": "MBA",
+    "group": "G7"
+  },
+  {
+    "prn": "BSFP126007",
+    "name": "Deshmukh Digvijay Vinayakrao",
+    "program": "MBA",
+    "group": "G7"
+  },
+  {
+    "prn": "BSFP126008",
+    "name": "Reddy Vasihnavi Vinay",
+    "program": "MBA",
+    "group": "G7"
+  },
+  {
+    "prn": "BSFP126009",
+    "name": "Bhosale Shruti Rajkumar",
+    "program": "MBA",
+    "group": "G7"
+  },
+  {
+    "prn": "BSFP126011",
+    "name": "Jadhav Sonali Sukhdev",
+    "program": "MBA",
+    "group": "G7"
+  },
+  {
+    "prn": "BSFP226013",
+    "name": "Fulari Nagendra Kashinath",
+    "program": "MBA Pharma",
+    "group": "G7"
+  },
+  {
+    "prn": "BSFP226014",
+    "name": "Rampure Onkar Ramesh",
+    "program": "MBA Pharma",
+    "group": "G7"
   },
   {
     "prn": "BSFU126033",
@@ -1422,18 +1494,6 @@ const STUDENTS = [
     "group": "G7"
   },
   {
-    "prn": "SELU126001",
-    "name": "Salgar Kshiteej Raghvendra",
-    "program": "B.Tech. ECE-Lateral Entry",
-    "group": "G7"
-  },
-  {
-    "prn": "SELU126002",
-    "name": "Swami Onkar Lingayya",
-    "program": "B.Tech. ECE-Lateral Entry",
-    "group": "G7"
-  },
-  {
     "prn": "SCFU226001",
     "name": "Deo Tejal Mukund",
     "program": "BCA",
@@ -1500,63 +1560,15 @@ const STUDENTS = [
     "group": "G7"
   },
   {
-    "prn": "BSFP126001",
-    "name": "Chakote Rasika Rajendra",
-    "program": "MBA",
+    "prn": "SELU126001",
+    "name": "Salgar Kshiteej Raghvendra",
+    "program": "B.Tech. ECE-Lateral Entry",
     "group": "G7"
   },
   {
-    "prn": "BSFP126002",
-    "name": "Bhansali Shruti Abhay",
-    "program": "MBA",
-    "group": "G7"
-  },
-  {
-    "prn": "BSFP126003",
-    "name": "Pujari Manjula Mallappa",
-    "program": "MBA",
-    "group": "G7"
-  },
-  {
-    "prn": "BSFP126004",
-    "name": "Surana Sakshi Shantilal",
-    "program": "MBA",
-    "group": "G7"
-  },
-  {
-    "prn": "BSFP126005",
-    "name": "Ambare Sampada Shrishail",
-    "program": "MBA",
-    "group": "G7"
-  },
-  {
-    "prn": "BSFP126006",
-    "name": "Maykal Shrirnag Vishnu",
-    "program": "MBA",
-    "group": "G7"
-  },
-  {
-    "prn": "BSFP126007",
-    "name": "Deshmukh Digvijay Vinayakrao",
-    "program": "MBA",
-    "group": "G7"
-  },
-  {
-    "prn": "BSFP126008",
-    "name": "Reddy Vasihnavi Vinay",
-    "program": "MBA",
-    "group": "G7"
-  },
-  {
-    "prn": "BSFP126009",
-    "name": "Bhosale Shruti Rajkumar",
-    "program": "MBA",
-    "group": "G7"
-  },
-  {
-    "prn": "BSFP126011",
-    "name": "Jadhav Sonali Sukhdev",
-    "program": "MBA",
+    "prn": "SELU126002",
+    "name": "Swami Onkar Lingayya",
+    "program": "B.Tech. ECE-Lateral Entry",
     "group": "G7"
   },
   {
@@ -1566,16 +1578,10 @@ const STUDENTS = [
     "group": "G7"
   },
   {
-    "prn": "BSFP226013",
-    "name": "Fulari Nagendra Kashinath",
-    "program": "MBA Pharma",
-    "group": "G7"
-  },
-  {
-    "prn": "BSFP226014",
-    "name": "Rampure Onkar Ramesh",
-    "program": "MBA Pharma",
-    "group": "G7"
+    "prn": "BSFP126010",
+    "name": "Ambarkar Jai Girish",
+    "program": "MBA",
+    "group": "G8"
   },
   {
     "prn": "BSFP226001",
@@ -1650,6 +1656,36 @@ const STUDENTS = [
     "group": "G8"
   },
   {
+    "prn": "BSFU126046",
+    "name": "Jagirdar Sadaf Moin",
+    "program": "BBA",
+    "group": "G8"
+  },
+  {
+    "prn": "BSFU126047",
+    "name": "Vaychal Santosh Sarthak",
+    "program": "BBA",
+    "group": "G8"
+  },
+  {
+    "prn": "BSFU126048",
+    "name": "Charudatta Ajay Naik",
+    "program": "BBA",
+    "group": "G8"
+  },
+  {
+    "prn": "BSFU126049",
+    "name": "Holagi Gangadhar Shantappa",
+    "program": "BBA",
+    "group": "G8"
+  },
+  {
+    "prn": "BSFU126050",
+    "name": "Kshirsagar Aryan Amar",
+    "program": "BBA",
+    "group": "G8"
+  },
+  {
     "prn": "BSFU226001",
     "name": "Bankapur Krutika Dinesh",
     "program": "B.Com.",
@@ -1694,12 +1730,6 @@ const STUDENTS = [
   {
     "prn": "SDFU226003",
     "name": "Holikatti Apoorva Subhashchandra",
-    "program": "B.Sc. Textile",
-    "group": "G8"
-  },
-  {
-    "prn": "SDFU226004",
-    "name": "Rida Muzaffarhusain Maniyar",
     "program": "B.Sc. Textile",
     "group": "G8"
   },
@@ -1752,6 +1782,12 @@ const STUDENTS = [
     "group": "G8"
   },
   {
+    "prn": "SDFU326009",
+    "name": "Rida Muzaffarhusain Maniyar",
+    "program": "B.SC Animation & VFX",
+    "group": "G8"
+  },
+  {
     "prn": "SPFU126001",
     "name": "Birajdar Prathmesh Shrishail",
     "program": "B.Pharm",
@@ -1770,45 +1806,9 @@ const STUDENTS = [
     "group": "G8"
   },
   {
-    "prn": "BSFU126046",
-    "name": "Jagirdar Sadaf Moin",
-    "program": "BBA",
-    "group": "G8"
-  },
-  {
-    "prn": "BSFP126010",
-    "name": "Ambarkar Jai Girish",
-    "program": "MBA",
-    "group": "G8"
-  },
-  {
     "prn": "SPLU126001",
     "name": "Sujal Sanjay Banarjee",
     "program": "B. Pharm. LE",
-    "group": "G8"
-  },
-  {
-    "prn": "BSFU126047",
-    "name": "Vaychal Santosh Sarthak",
-    "program": "BBA",
-    "group": "G8"
-  },
-  {
-    "prn": "BSFU126048",
-    "name": "Charudatta Ajay Naik",
-    "program": "BBA",
-    "group": "G8"
-  },
-  {
-    "prn": "BSFU126049",
-    "name": "Holagi Gangadhar Shantappa",
-    "program": "BBA",
-    "group": "G8"
-  },
-  {
-    "prn": "BSFU126050",
-    "name": "Kshirsagar Aryan Amar",
-    "program": "BBA",
     "group": "G8"
   }
 ];
