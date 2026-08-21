@@ -216,6 +216,30 @@ const STUDENTS = [
     "group": "G1"
   },
   {
+    "prn": "SCFP126059",
+    "name": "Koli Sapana Mahadev",
+    "program": "MCA",
+    "group": "G1"
+  },
+  {
+    "prn": "SCFP126060",
+    "name": "Gaddam Akash Chandrakant",
+    "program": "MCA",
+    "group": "G1"
+  },
+  {
+    "prn": "SCFU426025",
+    "name": "Singham Onkar Jalindar",
+    "program": "B.Tech. AIML",
+    "group": "G1"
+  },
+  {
+    "prn": "SCFU426026",
+    "name": "Relekar Dhanashri Siddharth",
+    "program": "B.Tech. AIML",
+    "group": "G1"
+  },
+  {
     "prn": "SCFU426001",
     "name": "Yadav Kashmira Rahul",
     "program": "B.Tech. AIML",
@@ -630,6 +654,42 @@ const STUDENTS = [
     "group": "G3"
   },
   {
+    "prn": "SCFU126040",
+    "name": "Rathod Om Raosaheb",
+    "program": "B.Tech. CSE",
+    "group": "G3"
+  },
+  {
+    "prn": "SCFU126041",
+    "name": "Gangavkar Nikhilesh Prashant",
+    "program": "B.Tech. CSE",
+    "group": "G3"
+  },
+  {
+    "prn": "SCFU126042",
+    "name": "Adone Utkarsha Gopal",
+    "program": "B.Tech. CSE",
+    "group": "G3"
+  },
+  {
+    "prn": "SCFU126043",
+    "name": "Nikhi Kumar",
+    "program": "B.Tech. CSE",
+    "group": "G3"
+  },
+  {
+    "prn": "SCFU126044",
+    "name": "Aman Irshad husain Zartar",
+    "program": "B.Tech. CSE",
+    "group": "G3"
+  },
+  {
+    "prn": "SCFU126045",
+    "name": "Abdul Zaid",
+    "program": "B.Tech. CSE",
+    "group": "G3"
+  },
+  {
     "prn": "SCLU326001",
     "name": "Mulla Aatif Nisarahmed",
     "program": "B.Tech. IT-Lateral Entry",
@@ -831,6 +891,36 @@ const STUDENTS = [
     "prn": "SCFP126058",
     "name": "Motgi Varad Vivek",
     "program": "MCA",
+    "group": "G4"
+  },
+  {
+    "prn": "SCLU326041",
+    "name": "Shraddha Chandrashekhar Minajagi",
+    "program": "B.Tech. IT-Lateral Entry",
+    "group": "G4"
+  },
+  {
+    "prn": "SCLU326042",
+    "name": "Kota Akshara Gyaneshwar",
+    "program": "B.Tech. IT-Lateral Entry",
+    "group": "G4"
+  },
+  {
+    "prn": "SCLU326043",
+    "name": "Badepeer Rayyan Shakil",
+    "program": "B.Tech. IT-Lateral Entry",
+    "group": "G4"
+  },
+  {
+    "prn": "SCLU326044",
+    "name": "Bhimpure Pramod Prashnat",
+    "program": "B.Tech. IT-Lateral Entry",
+    "group": "G4"
+  },
+  {
+    "prn": "SCLU326045",
+    "name": "Kshirsagar Sumedh Avinash",
+    "program": "B.Tech. IT-Lateral Entry",
     "group": "G4"
   },
   {
@@ -1236,6 +1326,24 @@ const STUDENTS = [
     "group": "G6"
   },
   {
+    "prn": "SCFU226012",
+    "name": "Swami Spoorti Amitkumar",
+    "program": "BCA",
+    "group": "G6"
+  },
+  {
+    "prn": "SELU126005",
+    "name": "Battul Shrutika Nardendra",
+    "program": "B.Tech. ECE-Lateral Entry",
+    "group": "G6"
+  },
+  {
+    "prn": "SEFU126011",
+    "name": "Nade Ashutosh Abhijit",
+    "program": "B.Tech. ECE",
+    "group": "G6"
+  },
+  {
     "prn": "BSFU126033",
     "name": "Khatavkar Rudraksh Ganesh",
     "program": "BBA",
@@ -1446,6 +1554,30 @@ const STUDENTS = [
     "group": "G7"
   },
   {
+    "prn": "BSFP126011",
+    "name": "Jadhav Sonali Sukhdev",
+    "program": "MBA",
+    "group": "G7"
+  },
+  {
+    "prn": "SPFU126004",
+    "name": "Singh Yogita",
+    "program": "B.Pharm",
+    "group": "G7"
+  },
+  {
+    "prn": "BSFP226013",
+    "name": "Fulari Nagendra Kashinath",
+    "program": "MBA Pharma",
+    "group": "G7"
+  },
+  {
+    "prn": "BSFP226014",
+    "name": "Rampure Onkar Ramesh",
+    "program": "MBA Pharma",
+    "group": "G7"
+  },
+  {
     "prn": "BSFP226001",
     "name": "Mengane Srushti Sunil",
     "program": "MBA Pharma",
@@ -1653,6 +1785,30 @@ const STUDENTS = [
     "prn": "SPLU126001",
     "name": "Sujal Sanjay Banarjee",
     "program": "B. Pharm. LE",
+    "group": "G8"
+  },
+  {
+    "prn": "BSFU126047",
+    "name": "Vaychal Santosh Sarthak",
+    "program": "BBA",
+    "group": "G8"
+  },
+  {
+    "prn": "BSFU126048",
+    "name": "Charudatta Ajay Naik",
+    "program": "BBA",
+    "group": "G8"
+  },
+  {
+    "prn": "BSFU126049",
+    "name": "Holagi Gangadhar Shantappa",
+    "program": "BBA",
+    "group": "G8"
+  },
+  {
+    "prn": "BSFU126050",
+    "name": "Kshirsagar Aryan Amar",
+    "program": "BBA",
     "group": "G8"
   }
 ];
