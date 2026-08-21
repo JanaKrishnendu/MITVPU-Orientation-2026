@@ -1693,12 +1693,12 @@ const GROUP_SCHEDULE = {
     {
       "time": "4:30 PM – 5:15 PM",
       "activity": "Formal Function",
-      "location": ""
+      "location": "In front of University Main Building"
     },
     {
       "time": "5:30 PM – 6:15 PM",
       "activity": "Cultural Program",
-      "location": ""
+      "location": "In front of University Main Building"
     }
   ],
   "G2": [
@@ -1736,12 +1736,12 @@ const GROUP_SCHEDULE = {
     {
       "time": "4:30 PM – 5:15 PM",
       "activity": "Formal Function",
-      "location": ""
+      "location": "In front of University Main Building"
     },
     {
       "time": "5:30 PM – 6:15 PM",
       "activity": "Cultural Program",
-      "location": ""
+      "location": "In front of University Main Building"
     }
   ],
   "G3": [
@@ -1779,12 +1779,12 @@ const GROUP_SCHEDULE = {
     {
       "time": "4:30 PM – 5:15 PM",
       "activity": "Formal Function",
-      "location": ""
+      "location": "In front of University Main Building"
     },
     {
       "time": "5:30 PM – 6:15 PM",
       "activity": "Cultural Program",
-      "location": ""
+      "location": "In front of University Main Building"
     }
   ],
   "G4": [
@@ -1822,12 +1822,12 @@ const GROUP_SCHEDULE = {
     {
       "time": "4:30 PM – 5:15 PM",
       "activity": "Formal Function",
-      "location": ""
+      "location": "In front of University Main Building"
     },
     {
       "time": "5:30 PM – 6:15 PM",
       "activity": "Cultural Program",
-      "location": ""
+      "location": "In front of University Main Building"
     }
   ],
   "G5": [
@@ -1865,12 +1865,12 @@ const GROUP_SCHEDULE = {
     {
       "time": "4:30 PM – 5:15 PM",
       "activity": "Formal Function",
-      "location": ""
+      "location": "In front of University Main Building"
     },
     {
       "time": "5:30 PM – 6:15 PM",
       "activity": "Cultural Program",
-      "location": ""
+      "location": "In front of University Main Building"
     }
   ],
   "G6": [
@@ -1908,12 +1908,12 @@ const GROUP_SCHEDULE = {
     {
       "time": "4:30 PM – 5:15 PM",
       "activity": "Formal Function",
-      "location": ""
+      "location": "In front of University Main Building"
     },
     {
       "time": "5:30 PM – 6:15 PM",
       "activity": "Cultural Program",
-      "location": ""
+      "location": "In front of University Main Building"
     }
   ],
   "G7": [
@@ -1951,12 +1951,12 @@ const GROUP_SCHEDULE = {
     {
       "time": "4:30 PM – 5:15 PM",
       "activity": "Formal Function",
-      "location": ""
+      "location": "In front of University Main Building"
     },
     {
       "time": "5:30 PM – 6:15 PM",
       "activity": "Cultural Program",
-      "location": ""
+      "location": "In front of University Main Building"
     }
   ],
   "G8": [
@@ -1994,12 +1994,12 @@ const GROUP_SCHEDULE = {
     {
       "time": "4:30 PM – 5:15 PM",
       "activity": "Formal Function",
-      "location": ""
+      "location": "In front of University Main Building"
     },
     {
       "time": "5:30 PM – 6:15 PM",
       "activity": "Cultural Program",
-      "location": ""
+      "location": "In front of University Main Building"
     }
   ]
 };
