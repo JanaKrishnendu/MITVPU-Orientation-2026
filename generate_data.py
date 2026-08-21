@@ -50,6 +50,7 @@ ROOM_BY_PROGRAM = {
 
 AUDITORIUM = "Auditorium (6th Floor)"
 SEMINAR_HALL = "Seminar Hall (1st Floor)"
+CAMPUS_TOUR_VENUE = "University Main Building (Ground Floor)"
 
 # Parents-only sessions, run in parallel with the student track while
 # students are elsewhere (Cyber Security/Campus Tour, Parenting Gen-Z has
@@ -70,14 +71,14 @@ _EARLY_TRACK = [
     {"time": "12:15 PM – 1:00 PM", "activity": "Cyber Security", "location": AUDITORIUM},
     {"time": "1:00 PM – 2:00 PM", "activity": "Lunch / Registration Session - II", "location": ""},
     {"time": "2:00 PM – 2:45 PM", "activity": "Citizenship & Responsibility", "location": ""},
-    {"time": "3:00 PM – 3:45 PM", "activity": "Campus Tour", "location": ""},
+    {"time": "3:00 PM – 3:45 PM", "activity": "Campus Tour", "location": CAMPUS_TOUR_VENUE},
     {"time": "4:30 PM – 5:15 PM", "activity": "Formal Function", "location": ""},
     {"time": "5:30 PM – 6:15 PM", "activity": "Cultural Program", "location": ""},
 ]
 _LATE_TRACK = [
     {"time": "10:00 AM – 11:00 AM", "activity": "Registration Session - I", "location": "", "useProgramRoom": True},
     {"time": "11:15 AM – 12:00 PM", "activity": "Citizenship & Responsibility", "location": ""},
-    {"time": "12:15 PM – 1:00 PM", "activity": "Campus Tour", "location": ""},
+    {"time": "12:15 PM – 1:00 PM", "activity": "Campus Tour", "location": CAMPUS_TOUR_VENUE},
     {"time": "1:00 PM – 2:00 PM", "activity": "Lunch / Registration Session - II", "location": ""},
     {"time": "2:00 PM – 2:45 PM", "activity": "LinkedIn Workshop", "location": AUDITORIUM},
     {"time": "3:00 PM – 3:45 PM", "activity": "Cyber Security", "location": AUDITORIUM},

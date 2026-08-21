@@ -1688,7 +1688,7 @@ const GROUP_SCHEDULE = {
     {
       "time": "3:00 PM – 3:45 PM",
       "activity": "Campus Tour",
-      "location": ""
+      "location": "University Main Building (Ground Floor)"
     },
     {
       "time": "4:30 PM – 5:15 PM",
@@ -1731,7 +1731,7 @@ const GROUP_SCHEDULE = {
     {
       "time": "3:00 PM – 3:45 PM",
       "activity": "Campus Tour",
-      "location": ""
+      "location": "University Main Building (Ground Floor)"
     },
     {
       "time": "4:30 PM – 5:15 PM",
@@ -1774,7 +1774,7 @@ const GROUP_SCHEDULE = {
     {
       "time": "3:00 PM – 3:45 PM",
       "activity": "Campus Tour",
-      "location": ""
+      "location": "University Main Building (Ground Floor)"
     },
     {
       "time": "4:30 PM – 5:15 PM",
@@ -1817,7 +1817,7 @@ const GROUP_SCHEDULE = {
     {
       "time": "3:00 PM – 3:45 PM",
       "activity": "Campus Tour",
-      "location": ""
+      "location": "University Main Building (Ground Floor)"
     },
     {
       "time": "4:30 PM – 5:15 PM",
@@ -1845,7 +1845,7 @@ const GROUP_SCHEDULE = {
     {
       "time": "12:15 PM – 1:00 PM",
       "activity": "Campus Tour",
-      "location": ""
+      "location": "University Main Building (Ground Floor)"
     },
     {
       "time": "1:00 PM – 2:00 PM",
@@ -1888,7 +1888,7 @@ const GROUP_SCHEDULE = {
     {
       "time": "12:15 PM – 1:00 PM",
       "activity": "Campus Tour",
-      "location": ""
+      "location": "University Main Building (Ground Floor)"
     },
     {
       "time": "1:00 PM – 2:00 PM",
@@ -1931,7 +1931,7 @@ const GROUP_SCHEDULE = {
     {
       "time": "12:15 PM – 1:00 PM",
       "activity": "Campus Tour",
-      "location": ""
+      "location": "University Main Building (Ground Floor)"
     },
     {
       "time": "1:00 PM – 2:00 PM",
@@ -1974,7 +1974,7 @@ const GROUP_SCHEDULE = {
     {
       "time": "12:15 PM – 1:00 PM",
       "activity": "Campus Tour",
-      "location": ""
+      "location": "University Main Building (Ground Floor)"
     },
     {
       "time": "1:00 PM – 2:00 PM",
