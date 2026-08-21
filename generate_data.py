@@ -6,6 +6,7 @@ Run this again any time the roster changes:
 
 Expects columns (in order): SL No, PRN, Name, Program, Group
 """
+import copy
 import json
 import re
 import openpyxl
@@ -83,7 +84,7 @@ _LATE_TRACK = [
     {"time": "4:30 PM – 5:15 PM", "activity": "Formal Function", "location": ""},
     {"time": "5:30 PM – 6:15 PM", "activity": "Cultural Program", "location": ""},
 ]
-GROUP_SCHEDULE = {
+_TRACK_BY_GROUP = {
     "G1": _EARLY_TRACK,
     "G2": _EARLY_TRACK,
     "G3": _EARLY_TRACK,
@@ -93,6 +94,20 @@ GROUP_SCHEDULE = {
     "G7": _LATE_TRACK,
     "G8": _LATE_TRACK,
 }
+
+# Citizenship & Responsibility room, per group.
+CITIZENSHIP_ROOM_BY_GROUP = {
+    "G1": "508", "G2": "508", "G5": "508", "G6": "508",
+    "G3": "509", "G4": "509", "G7": "509", "G8": "509",
+}
+
+GROUP_SCHEDULE = {}
+for _group, _track in _TRACK_BY_GROUP.items():
+    _schedule = copy.deepcopy(_track)
+    for _item in _schedule:
+        if _item["activity"] == "Citizenship & Responsibility":
+            _item["location"] = _room_label(CITIZENSHIP_ROOM_BY_GROUP[_group])
+    GROUP_SCHEDULE[_group] = _schedule
 
 
 def clean(value):

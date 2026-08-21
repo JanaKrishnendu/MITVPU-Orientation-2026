@@ -1683,7 +1683,7 @@ const GROUP_SCHEDULE = {
     {
       "time": "2:00 PM – 2:45 PM",
       "activity": "Citizenship & Responsibility",
-      "location": ""
+      "location": "Room 508 (5th Floor)"
     },
     {
       "time": "3:00 PM – 3:45 PM",
@@ -1726,7 +1726,7 @@ const GROUP_SCHEDULE = {
     {
       "time": "2:00 PM – 2:45 PM",
       "activity": "Citizenship & Responsibility",
-      "location": ""
+      "location": "Room 508 (5th Floor)"
     },
     {
       "time": "3:00 PM – 3:45 PM",
@@ -1769,7 +1769,7 @@ const GROUP_SCHEDULE = {
     {
       "time": "2:00 PM – 2:45 PM",
       "activity": "Citizenship & Responsibility",
-      "location": ""
+      "location": "Room 509 (5th Floor)"
     },
     {
       "time": "3:00 PM – 3:45 PM",
@@ -1812,7 +1812,7 @@ const GROUP_SCHEDULE = {
     {
       "time": "2:00 PM – 2:45 PM",
       "activity": "Citizenship & Responsibility",
-      "location": ""
+      "location": "Room 509 (5th Floor)"
     },
     {
       "time": "3:00 PM – 3:45 PM",
@@ -1840,7 +1840,7 @@ const GROUP_SCHEDULE = {
     {
       "time": "11:15 AM – 12:00 PM",
       "activity": "Citizenship & Responsibility",
-      "location": ""
+      "location": "Room 508 (5th Floor)"
     },
     {
       "time": "12:15 PM – 1:00 PM",
@@ -1883,7 +1883,7 @@ const GROUP_SCHEDULE = {
     {
       "time": "11:15 AM – 12:00 PM",
       "activity": "Citizenship & Responsibility",
-      "location": ""
+      "location": "Room 508 (5th Floor)"
     },
     {
       "time": "12:15 PM – 1:00 PM",
@@ -1926,7 +1926,7 @@ const GROUP_SCHEDULE = {
     {
       "time": "11:15 AM – 12:00 PM",
       "activity": "Citizenship & Responsibility",
-      "location": ""
+      "location": "Room 509 (5th Floor)"
     },
     {
       "time": "12:15 PM – 1:00 PM",
@@ -1969,7 +1969,7 @@ const GROUP_SCHEDULE = {
     {
       "time": "11:15 AM – 12:00 PM",
       "activity": "Citizenship & Responsibility",
-      "location": ""
+      "location": "Room 509 (5th Floor)"
     },
     {
       "time": "12:15 PM – 1:00 PM",
