@@ -37,6 +37,7 @@ ROOM_BY_PROGRAM = {
     "B.Tech. CSE": {"student": _room_label("304"), "parent": _room_label("305")},
     "BCA": {"student": _room_label("306"), "parent": _room_label("307")},
     "B.Pharm": {"student": _room_label("517"), "parent": _room_label("518")},
+    "B. Pharm. LE": {"student": _room_label("517"), "parent": _room_label("518")},
     "B.Des.": {"student": _room_label("410"), "parent": _room_label("410")},
     "B.Sc. Textile": {"student": _room_label("410"), "parent": _room_label("410")},
     "B.SC Animation & VFX": {"student": _room_label("410"), "parent": _room_label("410")},

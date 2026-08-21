@@ -354,6 +354,12 @@ const STUDENTS = [
     "group": "G2"
   },
   {
+    "prn": "SCFU426024",
+    "name": "Hasan Ahmed Abraar Ahmed Shaikh",
+    "program": "B.Tech. AIML",
+    "group": "G2"
+  },
+  {
     "prn": "SEFU126001",
     "name": "Bogam Aryan Somnath",
     "program": "B.Tech. ECE",
@@ -404,6 +410,24 @@ const STUDENTS = [
   {
     "prn": "SEFU126009",
     "name": "Pawar Aniruddha Pawar",
+    "program": "B.Tech. ECE",
+    "group": "G2"
+  },
+  {
+    "prn": "SEFU126010",
+    "name": "Bomane Suyash Shivling",
+    "program": "B.Tech. ECE",
+    "group": "G2"
+  },
+  {
+    "prn": "SEFU126011",
+    "name": "Kharade Sarthak Dasharath",
+    "program": "B.Tech. ECE",
+    "group": "G2"
+  },
+  {
+    "prn": "SEFU126012",
+    "name": "Hulle Aadesh Abhay",
     "program": "B.Tech. ECE",
     "group": "G2"
   },
@@ -600,6 +624,12 @@ const STUDENTS = [
     "group": "G3"
   },
   {
+    "prn": "SCFU126039",
+    "name": "Thorat Soniya Satishkumar",
+    "program": "B.Tech. CSE",
+    "group": "G3"
+  },
+  {
     "prn": "SCLU326001",
     "name": "Mulla Aatif Nisarahmed",
     "program": "B.Tech. IT-Lateral Entry",
@@ -789,6 +819,18 @@ const STUDENTS = [
     "prn": "SCLU326032",
     "name": "Lad Janhavi Sachin",
     "program": "B.Tech. IT-Lateral Entry",
+    "group": "G4"
+  },
+  {
+    "prn": "SCLU326040",
+    "name": "Kassa Siddharth Omprakash",
+    "program": "B.Tech. IT-Lateral Entry",
+    "group": "G4"
+  },
+  {
+    "prn": "SCFP126058",
+    "name": "Motgi Varad Vivek",
+    "program": "MCA",
     "group": "G4"
   },
   {
@@ -1344,6 +1386,12 @@ const STUDENTS = [
     "group": "G7"
   },
   {
+    "prn": "SCFU226011",
+    "name": "Bipeen Santosh Patil",
+    "program": "BCA",
+    "group": "G7"
+  },
+  {
     "prn": "BSFP126001",
     "name": "Chakote Rasika Rajendra",
     "program": "MBA",
@@ -1458,6 +1506,18 @@ const STUDENTS = [
     "group": "G8"
   },
   {
+    "prn": "BSFP226011",
+    "name": "Ghiware Vinayak Shiwanand",
+    "program": "MBA Pharma",
+    "group": "G8"
+  },
+  {
+    "prn": "BSFP226012",
+    "name": "Chougule Pratik Sanjay",
+    "program": "MBA Pharma",
+    "group": "G8"
+  },
+  {
     "prn": "BSFU226001",
     "name": "Bankapur Krutika Dinesh",
     "program": "B.Com.",
@@ -1496,6 +1556,18 @@ const STUDENTS = [
   {
     "prn": "SDFU226002",
     "name": "Aazam Mohamad Ismail Shaikh",
+    "program": "B.Sc. Textile",
+    "group": "G8"
+  },
+  {
+    "prn": "SDFU226003",
+    "name": "Holikatti Apoorva Subhashchandra",
+    "program": "B.Sc. Textile",
+    "group": "G8"
+  },
+  {
+    "prn": "SDFU226004",
+    "name": "Rida Muzaffarhusain Maniyar",
     "program": "B.Sc. Textile",
     "group": "G8"
   },
@@ -1563,6 +1635,24 @@ const STUDENTS = [
     "prn": "SPFU126003",
     "name": "Yerwa Shrutika Avinash",
     "program": "B.Pharm",
+    "group": "G8"
+  },
+  {
+    "prn": "BSFU126046",
+    "name": "Jagirdar Sadaf Moin",
+    "program": "BBA",
+    "group": "G8"
+  },
+  {
+    "prn": "BSFP126010",
+    "name": "Ambarkar Jai Girish",
+    "program": "MBA",
+    "group": "G8"
+  },
+  {
+    "prn": "SPLU126001",
+    "name": "Sujal Sanjay Banarjee",
+    "program": "B. Pharm. LE",
     "group": "G8"
   }
 ];
@@ -1944,6 +2034,10 @@ const ROOM_BY_PROGRAM = {
     "parent": "Room 307 (3rd Floor)"
   },
   "B.Pharm": {
+    "student": "Room 517 (5th Floor)",
+    "parent": "Room 518 (5th Floor)"
+  },
+  "B. Pharm. LE": {
     "student": "Room 517 (5th Floor)",
     "parent": "Room 518 (5th Floor)"
   },

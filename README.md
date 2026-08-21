@@ -9,18 +9,18 @@ entirely in the browser and can be hosted anywhere that serves static files.
 
 ## Files
 
-| File                      | Purpose                                                                           |
-| ------------------------- | --------------------------------------------------------------------------------- |
-| `index.html`            | Page structure                                                                    |
-| `style.css`             | Styling (branded with MIT VPU maroon/orange)                                      |
-| `app.js`                | Search logic (by PRN or Name, with live suggestions), language switching, and the "Save as Image" download |
-| `translations.js`       | UI text + schedule/room translations for English, Marathi, Hindi                  |
-| `html2canvas.min.js`    | Vendored copy of [html2canvas](https://html2canvas.hertzen.com/) (MIT), used to render the result card to a downloadable JPG |
-| `data.js`               | **Generated** — student roster + group schedules, loaded by `index.html` |
-| `generate_data.py`      | Rebuilds`data.js` from the Excel roster + the schedule below                    |
-| `Students Details.xlsx` | Source roster (SL No, PRN, Name, Program, Group)                                  |
-| `UniversityLogo.webp`   | University logo used in the header                                                |
-| `netlify.toml`          | Netlify hosting config                                                            |
+| File                      | Purpose                                                                                                                    |
+| ------------------------- | -------------------------------------------------------------------------------------------------------------------------- |
+| `index.html`            | Page structure                                                                                                             |
+| `style.css`             | Styling (branded with MIT VPU maroon/orange)                                                                               |
+| `app.js`                | Search logic (by PRN or Name, with live suggestions), language switching, and the "Save as Image" download                 |
+| `translations.js`       | UI text + schedule/room translations for English, Marathi, Hindi                                                           |
+| `html2canvas.min.js`    | Vendored copy of[html2canvas](https://html2canvas.hertzen.com/) (MIT), used to render the result card to a downloadable JPG |
+| `data.js`               | **Generated** — student roster + group schedules, loaded by `index.html`                                          |
+| `generate_data.py`      | Rebuilds`data.js` from the Excel roster + the schedule below                                                             |
+| `Students Details.xlsx` | Source roster (SL No, PRN, Name, Program, Group)                                                                           |
+| `UniversityLogo.webp`   | University logo used in the header                                                                                         |
+| `netlify.toml`          | Netlify hosting config                                                                                                     |
 
 ## Multilingual support
 
